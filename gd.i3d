@@ -4,10 +4,20 @@
         <Export program="GIANTS Editor 64bit" version="9.0.3"/>
     </Asset>
     <Files>
-        <File fileId="9" filename="vehicleShader.xml"/>
+        <File fileId="9" filename="$data/shaders/vehicleShader.xml"/>
         <File fileId="2" filename="DIRT/texturas/1.dds"/>
         <File fileId="8" filename="SCAFX_TEXTURES/1.dds"/>
         <File fileId="3" filename="vehicleShader.xml"/>
+        <File fileId="10" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="11" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="13" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+        <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+        <File fileId="15" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="16" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+        <File fileId="17" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+        <File fileId="18" filename="$data/shared/detailLibrary/metallic/silverBumpy_normal.png"/>
+        <File fileId="19" filename="$data/shared/detailLibrary/metallic/silverBumpy_specular.png"/>
     </Files>
     <Materials>
         <Material name="Material.001" materialId="76" diffuseColor="0.0431373 0.0431373 0.0431373 1" customShaderId="3">
@@ -20,12 +30,45 @@
             <CustomParameter name="RDT" value="0 0 0 0"/>
             <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
         </Material>
+        <Material name="Material.035_metalPainted" materialId="123" diffuseColor="0 0.231373 0 1" customShaderId="9">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="10"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="12"/>
+        </Material>
+        <Material name="Material.035_plasticPainted" materialId="124" diffuseColor="0 0.231373 0 1" customShaderId="9">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="13"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="14"/>
+        </Material>
+        <Material name="Material.035_silverScratched" materialId="125" diffuseColor="0 0.231373 0 1" customShaderId="9">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="16"/>
+        </Material>
+        <Material name="Material.035_silverBumpy" materialId="126" diffuseColor="0 0.231373 0 1" customShaderId="9">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="17"/>
+            <Custommap name="detailNormal" fileId="18"/>
+            <Custommap name="detailSpecular" fileId="19"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="gd.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <Shape shapeId="1" name="New Project (2)" translation="-0.134307 1.70747 -1.26371" rotation="90 0 0" scale="0.5 0.37 0.5" nodeId="1047" materialIds="76" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="2" name="New Project (1)" translation="0.137156 5.51722 5.59704" rotation="-1.50751e-06 -1.65881e-08 -0.630965" scale="1.7 3 2" nodeId="1048" materialIds="122"/>
+            <Shape shapeId="2" name="New Project (1)" translation="0.137156 5.51722 5.59704" rotation="-1.50751e-06 -1.65881e-08 -0.630965" scale="1.7 3 2" nodeId="1048" materialIds="123 124 125 126"/>
         </Shape>
     </Scene>
 </i3D>

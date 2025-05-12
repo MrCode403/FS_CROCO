@@ -7,6 +7,11 @@
         <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
         <File fileId="2" filename="SCAFX_MASSEY/SCAFX_6049/material/03_1523_normal.dds"/>
         <File fileId="3" filename="SCAFX_MASSEY/SCAFX_6049/material/03_1523_specular.dds"/>
+        <File fileId="5" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="6" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="7" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+        <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPaintedOld_diffuse.png"/>
+        <File fileId="9" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPaintedOld_specular.png"/>
     </Files>
     <Materials>
         <Material name="03_1523_Mat" materialId="1342" diffuseColor="1 1 1 1" customShaderId="4" customShaderVariation="colorMask">
@@ -24,11 +29,31 @@
             <CustomParameter name="colorMat7" value="0.1 1 1 0"/>
         </Material>
         <Material name="UnnamedMaterial" materialId="120" diffuseColor="1 1 1 1"/>
+        <Material name="03_1523_Mat_silverScratched" materialId="1343" diffuseColor="1 1 1 1" customShaderId="4" customShaderVariation="colorMask">
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.800000 0.800000 0.800000"/>
+            <Custommap name="detailDiffuse" fileId="5"/>
+            <Custommap name="detailNormal" fileId="6"/>
+            <Custommap name="detailSpecular" fileId="7"/>
+        </Material>
+        <Material name="03_1523_Mat_metalPaintedOld" materialId="1344" diffuseColor="1 1 1 1" customShaderId="4" customShaderVariation="colorMask">
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.570000 0.400000 0.100000"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <Custommap name="detailNormal" fileId="6"/>
+            <Custommap name="detailSpecular" fileId="9"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="IC.i3d.shapes"/>
     <Dynamics/>
     <Scene>
-        <Shape shapeId="1" name="simple_Ic_Trigger" translation="0.37118 1.4 0.5" scale="3.09197 2.78213 5.04304" kinematic="true" trigger="true" collisionMask="1048576" nodeId="771" materialIds="120" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <Shape shapeId="2" name="impeller" translation="0 1.081 0.62" scale="0.8 0.8 1" clipDistance="20" nodeId="1345" materialIds="1342" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="simple_Ic_Trigger" translation="0.37118 1.4 0.5" scale="3.09197 2.78213 5.04304" kinematic="true" trigger="true" nodeId="771" materialIds="120" castsShadows="true" receiveShadows="true" nonRenderable="true" collisionFilterGroup="0" collisionFilterMask="0"/>
+        <Shape shapeId="2" name="impeller" translation="0 1.081 0.62" scale="0.8 0.8 1" clipDistance="20" nodeId="1345" materialIds="1343 1344" castsShadows="true" receiveShadows="true"/>
     </Scene>
 </i3D>

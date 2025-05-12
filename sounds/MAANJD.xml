@@ -1,41 +1,41 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle_sounds.xsd">
     <motorized>
         <sounds>
-            <motor template="engineSmall" file="sounds/series6M_loop.gls" volumeScale="5" />
-			
-						  <motor template="SMALL_TRACTOR_MOTOR_OFFLOAD_RUN" file="sounds/turbo.ogg" linkNode="0>" volumeScale="4.4" innerRadius="10.0" outerRadius="70.0"  >
+            <motor template="engineSmall" file="sounds/series6M_loop.gls" volumeScale="5"/>
+            
+                          <motor template="SMALL_TRACTOR_MOTOR_OFFLOAD_RUN" file="sounds/turbo.ogg" linkNode="0>" volumeScale="4.4" innerRadius="10.0" outerRadius="70.0">
               <volume indoor="2" outdoor="2"/>
-			   <volume indoor="2" outdoor="2"/>
-			                  <pitch indoor="0.07" outdoor=".06" >
-                    <modifier type="SPEED" value="0.0" modifiedValue="01.8" />
-                    <modifier type="SPEED" value="28.0" modifiedValue="2.2" />
+               <volume indoor="2" outdoor="2"/>
+                              <pitch indoor="0.07" outdoor=".06">
+                    <modifier type="SPEED" value="0.0" modifiedValue="01.8"/>
+                    <modifier type="SPEED" value="28.0" modifiedValue="2.2"/>
                 </pitch>
-                <lowpassGain indoor="02" outdoor="2.0" />
+                <lowpassGain indoor="02" outdoor="2.0"/>
             </motor>
-			
-	          <motor template="SMALL_TRACTOR_MOTOR_IDLE" file="sounds/turbo.ogg" linkNode="0>" volumeScale="3.6" innerRadius="220.0" outerRadius="220.0"  >
+            
+              <motor template="SMALL_TRACTOR_MOTOR_IDLE" file="sounds/turbo.ogg" linkNode="0>" volumeScale="3.6" innerRadius="220.0" outerRadius="220.0">
               <volume indoor="2" outdoor="2"/>
-			                  <pitch indoor="0.1" outdoor=".15" >
-                    <modifier type="SPEED" value="0.0" modifiedValue="01.8" />
-                    <modifier type="SPEED" value="28.0" modifiedValue="2.2" />
+                              <pitch indoor="0.1" outdoor=".15">
+                    <modifier type="SPEED" value="0.0" modifiedValue="01.8"/>
+                    <modifier type="SPEED" value="28.0" modifiedValue="2.2"/>
                 </pitch>
-                <lowpassGain indoor="02" outdoor="2.0" />
+                <lowpassGain indoor="02" outdoor="2.0"/>
             </motor>
-			
-			  <motor template="SMALL_TRACTOR_MOTOR_ONLOAD_RUN" file="sounds/turbo.ogg" linkNode="0>" volumeScale="3.5" >
+            
+              <motor template="SMALL_TRACTOR_MOTOR_ONLOAD_RUN" file="sounds/turbo.ogg" linkNode="0>" volumeScale="3.5">
               <volume indoor="2" outdoor="2"/>
-			                  <pitch indoor="0.1" outdoor="0.135" >
-                    <modifier type="SPEED" value="0.0" modifiedValue="01.8" />
-                    <modifier type="SPEED" value="28.0" modifiedValue="2.2" />
+                              <pitch indoor="0.1" outdoor="0.135">
+                    <modifier type="SPEED" value="0.0" modifiedValue="01.8"/>
+                    <modifier type="SPEED" value="28.0" modifiedValue="2.2"/>
                 </pitch>
-                <lowpassGain indoor="0.6" outdoor="1.0" />
+                <lowpassGain indoor="0.6" outdoor="1.0"/>
             </motor>
-			
-            <motor template="indoorCabinRumble" />
+            
+            <motor template="indoorCabinRumble"/>
             <gearbox template="transmissionMediumVintage" volumeScale="0.4"/>
             <compressedAir template="compressedAir"/>
-            <airCompressorRun template="brakeCompressorSmall" />
+            <airCompressorRun template="brakeCompressorSmall"/>
             <airCompressorStop template="compressedAir"/>
             <gearLeverStart template="gearDisengaged" volumeScale="3.5"/>
             <gearLeverEnd template="gearEngaged" volumeScale="3.5"/>
@@ -46,25 +46,25 @@
 
     <lights>
         <sounds>
-            <toggleLights template="SWITCH_01"  />
-            <turnLight template="SWITCH_TURNLIGHT_JD"  />
+            <toggleLights template="SWITCH_01"/>
+            <turnLight template="SWITCH_TURNLIGHT_JD"/>
         </sounds>
     </lights>
 
     <attacherJoints>
         <sounds>
-            <attach template="ATTACH_01" />
-            <hydraulic template="defaultHydraulicSound" />
+            <attach template="ATTACH_01"/>
+            <hydraulic template="defaultHydraulicSound"/>
         </sounds>
     </attacherJoints>
 
     <drivable>
         <sounds>
-            <waterSplash template="WATER_SPLASH_01" />
+            <waterSplash template="WATER_SPLASH_01"/>
         </sounds>
     </drivable>
 
     <honk>
-        <sound template="HONK_JD6250R" />
+        <sound template="HONK_JD6250R"/>
     </honk>
 </sounds>

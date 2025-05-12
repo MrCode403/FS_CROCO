@@ -10,6 +10,16 @@
         <File fileId="2" filename="SCAFX_6049/texturas/1.dds"/>
         <File fileId="13" filename="SCAFX_PARTS/texturas/1.dds"/>
         <File fileId="19" filename="SCAFX_PARTS/texturas/clearGlass_diffuse.dds"/>
+        <File fileId="20" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="21" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="22" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="23" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="24" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+        <File fileId="25" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+        <File fileId="26" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+        <File fileId="27" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_diffuse.png"/>
+        <File fileId="28" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_normal.png"/>
+        <File fileId="29" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_specular.png"/>
     </Files>
     <Materials>
         <Material name="Material.002" materialId="80" alphaBlending="true" customShaderId="3">
@@ -48,39 +58,113 @@
         <Material name="Material.045" materialId="128" diffuseColor="1 1 0.8 1" specularColor="0.294118 1 1" customShaderId="18" shadingRate="1x2">
             <CustomParameter name="lightControl" value="1000 0 0 0"/>
         </Material>
+        <Material name="Material.032_metalPainted" materialId="129" diffuseColor="0.027451 0.027451 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="20"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="22"/>
+        </Material>
+        <Material name="Material.032_silverScratched" materialId="130" diffuseColor="0.027451 0.027451 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="23"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="24"/>
+        </Material>
+        <Material name="Material.032_metalPainted" materialId="131" diffuseColor="0.027451 0.027451 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="20"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="22"/>
+        </Material>
+        <Material name="Material.032_silverScratched" materialId="132" diffuseColor="0.027451 0.027451 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="23"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="24"/>
+        </Material>
+        <Material name="Material.017_metalPainted" materialId="133" diffuseColor="0.027451 0.0392157 0.0431373 1" customShaderId="3">
+            <Glossmap fileId="13"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="20"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="22"/>
+        </Material>
+        <Material name="Material.017_plasticPainted" materialId="134" diffuseColor="0.027451 0.0392157 0.0431373 1" customShaderId="3">
+            <Glossmap fileId="13"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="25"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="26"/>
+        </Material>
+        <Material name="Material.017_fabric1" materialId="135" diffuseColor="0.027451 0.0392157 0.0431373 1" customShaderId="3">
+            <Glossmap fileId="13"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="1.0"/>
+            <Custommap name="detailDiffuse" fileId="27"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="29"/>
+        </Material>
+        <Material name="Material.017_silverScratched" materialId="136" diffuseColor="0.027451 0.0392157 0.0431373 1" customShaderId="3">
+            <Glossmap fileId="13"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="23"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="24"/>
+        </Material>
+        <Material name="Material.002_metalPainted" materialId="137" alphaBlending="true" customShaderId="3">
+            <Texture fileId="19"/>
+            <Glossmap fileId="13"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="20"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="22"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="INDD.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <TransformGroup name="transform" translation="0 1.55 -1.355" rotation="0 -90 0" scale="1 1 1.02" nodeId="767">
-            <Shape shapeId="1" name="f2 (3)" translation="0 0 -0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="768" materialIds="123" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <Shape shapeId="1" name="f2 (3)" translation="0 0 -0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="768" materialIds="129 130" castsShadows="true" receiveShadows="true" nonRenderable="true">
                 <Shape shapeId="2" name="f2 (4)" translation="0.001 0 0" nodeId="769" materialIds="122"/>
             </Shape>
-            <Shape shapeId="3" name="f2" translation="0 0 0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="770" materialIds="123" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <Shape shapeId="3" name="f2" translation="0 0 0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="770" materialIds="131 132" castsShadows="true" receiveShadows="true" nonRenderable="true">
                 <Shape shapeId="4" name="f2 (1)" translation="0.001 0 0" nodeId="771" materialIds="122"/>
             </Shape>
         </TransformGroup>
         <TransformGroup name="transform" translation="0 1.55 -1.677" rotation="0 90 0" scale="1 1 1.02" nodeId="772">
-            <Shape shapeId="1" name="f2 (3)" translation="0 0 -0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="773" materialIds="123" castsShadows="true" receiveShadows="true" nonRenderable="true">
-                <Shape shapeId="2" name="f2 (4)" translation="0.001 0 0" nodeId="774" materialIds="121" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="f2 (3)" translation="0 0 -0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="773" materialIds="129 130" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="2" name="f2 (4)" translation="0.001 0 0" nodeId="774" materialIds="122" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="f2" translation="0 0 0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="775" materialIds="123" castsShadows="true" receiveShadows="true" nonRenderable="true">
-                <Shape shapeId="4" name="f2 (1)" translation="0.001 0 0" nodeId="776" materialIds="121" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="f2" translation="0 0 0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="775" materialIds="131 132" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="4" name="f2 (1)" translation="0.001 0 0" nodeId="776" materialIds="122" castsShadows="true" receiveShadows="true"/>
             </Shape>
         </TransformGroup>
         <TransformGroup name="transform" translation="0.899 1.77 -1.23" rotation="36.3776 63.5696 -140.558" scale="1.3 1.25 1.25" nodeId="862">
-            <Shape shapeId="5" name="hmt (2)" rotation="90 -0 0" nodeId="863" materialIds="106" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="hmt (2)" rotation="90 -0 0" nodeId="863" materialIds="133 134 135 136" castsShadows="true" receiveShadows="true"/>
             <Shape shapeId="6" name="hmt (4)" rotation="90 -0 0" nodeId="864" materialIds="102"/>
             <Shape shapeId="7" name="hmt" rotation="90 -0 0" nodeId="865" materialIds="108"/>
             <Shape shapeId="8" name="Arjun_605 (12)" translation="0.592 -0.2577 0" rotation="90 0 -90" scale="0.06 0.06 0.06" nodeId="866" materialIds="128" nonRenderable="true">
-                <Shape shapeId="9" name="New Project" translation="0 0 -0.5" scale="1.66 1.66 1.66" nodeId="867" materialIds="80" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="Arjun_605 (12)" translation="0 0 0.01" nodeId="868" materialIds="127"/>
+                <Shape shapeId="9" name="New Project" translation="0 0 -0.5" scale="1.66 1.66 1.66" nodeId="867" materialIds="137" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="Arjun_605 (12)" translation="0 0 0.01" nodeId="868" materialIds="128"/>
             </Shape>
         </TransformGroup>
         <TransformGroup name="transform" translation="0.899 1.77 -1.23" rotation="36.3776 63.5696 -140.558" scale="1.3 1.25 1.25" nodeId="790">
             <Shape shapeId="8" name="Arjun_605 (12)" translation="0.592 -0.258 0" rotation="90 0 -90" scale="0.06 0.06 0.06" nodeId="791" materialIds="128">
-                <Shape shapeId="9" name="New Project" translation="0 0 -0.5" scale="1.66 1.66 1.66" nodeId="792" materialIds="80" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="8" name="Arjun_605 (12)" translation="0 0 0.01" nodeId="793" materialIds="127"/>
+                <Shape shapeId="9" name="New Project" translation="0 0 -0.5" scale="1.66 1.66 1.66" nodeId="792" materialIds="137" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="Arjun_605 (12)" translation="0 0 0.01" nodeId="793" materialIds="128"/>
             </Shape>
         </TransformGroup>
     </Scene>

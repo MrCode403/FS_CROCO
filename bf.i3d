@@ -4,9 +4,14 @@
         <Export program="GIANTS Editor 64bit" version="9.0.3"/>
     </Asset>
     <Files>
-        <File fileId="3" filename="vehicleShader.xml"/>
+        <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
         <File fileId="2" filename="SCAFX_MODEL/1.dds"/>
         <File fileId="8" filename="SCAFX_MODEL/SCAFX_MODEL/1.dds"/>
+        <File fileId="9" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="10" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="11" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="12" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="13" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
     </Files>
     <Materials>
         <Material name="i3d_default_material" materialId="32" diffuseColor="0 0.231373 0 1" customShaderId="3">
@@ -24,15 +29,55 @@
             <CustomParameter name="RDT" value="0 0 0 0"/>
             <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
         </Material>
+        <Material name="i3d_default_material_metalPainted" materialId="37" diffuseColor="0.00784314 0.00784314 0.00784314 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="9"/>
+            <Custommap name="detailNormal" fileId="10"/>
+            <Custommap name="detailSpecular" fileId="11"/>
+        </Material>
+        <Material name="i3d_default_material_metalPainted" materialId="38" diffuseColor="0 0.231373 0 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="9"/>
+            <Custommap name="detailNormal" fileId="10"/>
+            <Custommap name="detailSpecular" fileId="11"/>
+        </Material>
+        <Material name="i3d_default_material_silverScratched" materialId="39" diffuseColor="0 0.231373 0 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="12"/>
+            <Custommap name="detailNormal" fileId="10"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+        </Material>
+        <Material name="i3d_default_material_metalPainted" materialId="40" diffuseColor="0.00784314 0.156863 0.00784314 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="9"/>
+            <Custommap name="detailNormal" fileId="10"/>
+            <Custommap name="detailSpecular" fileId="11"/>
+        </Material>
+        <Material name="i3d_default_material_metalPainted" materialId="41" diffuseColor="0.00784314 0.156863 0.00784314 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="9"/>
+            <Custommap name="detailNormal" fileId="10"/>
+            <Custommap name="detailSpecular" fileId="11"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="bf.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <TransformGroup name="transform" nodeId="922">
-            <Shape shapeId="1" name="Cube.018" nodeId="923" materialIds="34" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="New Project (9)" nodeId="924" materialIds="32" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-            <Shape shapeId="3" name="SCAFIONX.044" nodeId="925" materialIds="36,36" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="New Project (9)" nodeId="926" materialIds="32" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="Cube.018" nodeId="923" materialIds="37" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="New Project (9)" nodeId="924" materialIds="38 39" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="3" name="SCAFIONX.044" nodeId="925" materialIds="40 41" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="New Project (9)" nodeId="926" materialIds="38 39" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
     </Scene>
 </i3D>

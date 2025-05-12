@@ -4,10 +4,17 @@
         <Export program="GIANTS Editor 64bit" version="9.0.6"/>
     </Asset>
     <Files>
-        <File fileId="11" filename="SCAFX_MODEL/SCAFX_MODEL/glowShader.xml"/>
+        <File fileId="11" filename="$data/shaders/glowShader.xml"/>
         <File fileId="2" filename="SCAFX_MODEL/SCAFX_TEXTURES/1.dds"/>
         <File fileId="1" filename="SCAFX_MODEL/SCAFX_TEXTURES/clearGlass_diffuse.dds"/>
-        <File fileId="3" filename="vehicleShader.xml"/>
+        <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="13" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="14" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="15" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+        <File fileId="16" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+        <File fileId="17" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="18" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
     </Files>
     <Materials>
         <Material name="i3d_default_material" materialId="44" diffuseColor="0.8 0.8 0.8 1" specularColor="1 1 1"/>
@@ -20,26 +27,58 @@
         </Material>
         <Material name="Material.027" materialId="108" diffuseColor="0.0941177 0.0941177 0.0941177 1" alphaBlending="true"/>
         <Material name="UnnamedMaterial" materialId="143" diffuseColor="1 1 1 1" specularColor="1 1 0.894118" customShaderId="11" shadingRate="1x2"/>
+        <Material name="Material.014_metalPainted" materialId="144" alphaBlending="true" customShaderId="3">
+            <Texture fileId="1"/>
+            <Glossmap fileId="2"/>
+            <Custommap name="detailDiffuse" fileId="12"/>
+            <Custommap name="detailNormal" fileId="13"/>
+            <Custommap name="detailSpecular" fileId="14"/>
+        </Material>
+        <Material name="Material.014_plasticPainted" materialId="145" alphaBlending="true" customShaderId="3">
+            <Texture fileId="1"/>
+            <Glossmap fileId="2"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <Custommap name="detailNormal" fileId="13"/>
+            <Custommap name="detailSpecular" fileId="16"/>
+        </Material>
+        <Material name="Material.017_metalPainted" materialId="146" specularColor="1 1 1" alphaBlending="true" customShaderId="3">
+            <Texture fileId="1"/>
+            <Custommap name="detailDiffuse" fileId="12"/>
+            <Custommap name="detailNormal" fileId="13"/>
+            <Custommap name="detailSpecular" fileId="14"/>
+        </Material>
+        <Material name="Material.017_plasticPainted" materialId="147" specularColor="1 1 1" alphaBlending="true" customShaderId="3">
+            <Texture fileId="1"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <Custommap name="detailNormal" fileId="13"/>
+            <Custommap name="detailSpecular" fileId="16"/>
+        </Material>
+        <Material name="Material.017_silverScratched" materialId="148" specularColor="1 1 1" alphaBlending="true" customShaderId="3">
+            <Texture fileId="1"/>
+            <Custommap name="detailDiffuse" fileId="17"/>
+            <Custommap name="detailNormal" fileId="13"/>
+            <Custommap name="detailSpecular" fileId="18"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="light.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <TransformGroup name="transform" translation="0.12503 -1.11662 2.04565" nodeId="1012">
             <TransformGroup name="transform" translation="0.146044 1.24824 0.125086" rotation="0 4 0" scale="0.3 0.39 0.3" nodeId="1013">
-                <Shape shapeId="1" name="Cube.021" translation="0 0.588 3.2661" scale="0.385995 0.183928 0.230707" nodeId="1014" materialIds="97" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="1" name="Cube.021" translation="0 0.588 3.2661" scale="0.385995 0.183928 0.230707" nodeId="1014" materialIds="144 145" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="2" name="Cube.020" translation="0 0.71 3.13175" scale="0.336395 0.336395 0.336395" nodeId="1015" materialIds="44"/>
                 <TransformGroup name="transform" translation="0 0.58 2.95" rotation="-90 0 0" scale="0.06 0.05 0.05" nodeId="1016">
                     <Shape shapeId="3" name="Cylinder.012" rotation="-0 -180 -0" nodeId="1017" materialIds="108" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="4" name="Cylinder.011" rotation="-0 -180 -0" nodeId="1018" materialIds="101"/>
+                    <Shape shapeId="4" name="Cylinder.011" rotation="-0 -180 -0" nodeId="1018" materialIds="146 147 148"/>
                     <Shape shapeId="5" name="cube" translation="0 -2 0" scale="13 1 8" visibility="false" nodeId="1019" materialIds="143" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
                 </TransformGroup>
             </TransformGroup>
             <TransformGroup name="transform" translation="-0.166773 1.248 0.126869" rotation="0 -4 0" scale="0.3 0.39 0.3" nodeId="1020">
-                <Shape shapeId="1" name="Cube.021" translation="0 0.588 3.2661" scale="0.385995 0.183928 0.230707" nodeId="1021" materialIds="97" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="1" name="Cube.021" translation="0 0.588 3.2661" scale="0.385995 0.183928 0.230707" nodeId="1021" materialIds="144 145" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="2" name="Cube.020" translation="0 0.71 3.13175" scale="0.336395 0.336395 0.336395" nodeId="1022" materialIds="44"/>
                 <TransformGroup name="transform" translation="0 0.58 2.95" rotation="-90 0 0" scale="0.06 0.05 0.05" nodeId="1023">
                     <Shape shapeId="3" name="Cylinder.012" rotation="-0 -180 -0" nodeId="1024" materialIds="108" castsShadows="true" receiveShadows="true"/>
-                    <Shape shapeId="4" name="Cylinder.011" rotation="-0 -180 -0" nodeId="1025" materialIds="101"/>
+                    <Shape shapeId="4" name="Cylinder.011" rotation="-0 -180 -0" nodeId="1025" materialIds="146 147 148"/>
                     <Shape shapeId="5" name="cube" translation="0 -2 0" scale="13 1 8" visibility="false" nodeId="1026" materialIds="143" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
                 </TransformGroup>
             </TransformGroup>

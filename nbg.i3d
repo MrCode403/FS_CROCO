@@ -4,7 +4,17 @@
         <Export program="GIANTS Editor 64bit" version="9.0.3"/>
     </Asset>
     <Files>
-        <File fileId="2" filename="vehicleShader.xml"/>
+        <File fileId="2" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="3" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="4" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="5" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="6" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="7" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+        <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+        <File fileId="9" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+        <File fileId="10" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+        <File fileId="11" filename="$data/shared/detailLibrary/metallic/silverBumpy_normal.png"/>
+        <File fileId="12" filename="$data/shared/detailLibrary/metallic/silverBumpy_specular.png"/>
     </Files>
     <Materials>
         <Material name="08Mat" materialId="11" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
@@ -23,25 +33,213 @@
             <CustomParameter name="RDT" value="0 0 0 0"/>
             <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
         </Material>
+        <Material name="Material.002_metalPainted" materialId="101" diffuseColor="0 0.227451 0 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="3"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+        </Material>
+        <Material name="Material.002_silverScratched" materialId="102" diffuseColor="0 0.227451 0 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="6"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="7"/>
+        </Material>
+        <Material name="Material.019_metalPainted" materialId="103" diffuseColor="0.8 0.8 0.8 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="3"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+        </Material>
+        <Material name="Material.019_plasticPainted" materialId="104" diffuseColor="0.8 0.8 0.8 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="9"/>
+        </Material>
+        <Material name="Material.019_silverScratched" materialId="105" diffuseColor="0.8 0.8 0.8 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="6"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="7"/>
+        </Material>
+        <Material name="Material.019_silverBumpy" materialId="106" diffuseColor="0.8 0.8 0.8 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="10"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="12"/>
+        </Material>
+        <Material name="Material.010_metalPainted" materialId="107" diffuseColor="0.00784314 0.00784314 0.00784314 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="3"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+        </Material>
+        <Material name="Material.010_plasticPainted" materialId="108" diffuseColor="0.00784314 0.00784314 0.00784314 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="9"/>
+        </Material>
+        <Material name="Material.010_silverScratched" materialId="109" diffuseColor="0.00784314 0.00784314 0.00784314 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="6"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="7"/>
+        </Material>
+        <Material name="Material.010_silverBumpy" materialId="110" diffuseColor="0.00784314 0.00784314 0.00784314 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="10"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="12"/>
+        </Material>
+        <Material name="08Mat_metalPainted" materialId="111" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="3"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+        </Material>
+        <Material name="08Mat_plasticPainted" materialId="112" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="9"/>
+        </Material>
+        <Material name="08Mat_silverScratched" materialId="113" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="6"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="7"/>
+        </Material>
+        <Material name="08Mat_silverBumpy" materialId="114" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="10"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="12"/>
+        </Material>
+        <Material name="08Mat_metalPainted" materialId="115" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="3"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+        </Material>
+        <Material name="08Mat_plasticPainted" materialId="116" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="9"/>
+        </Material>
+        <Material name="08Mat_silverScratched" materialId="117" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="6"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="7"/>
+        </Material>
+        <Material name="08Mat_silverBumpy" materialId="118" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="10"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="12"/>
+        </Material>
+        <Material name="08Mat_metalPainted" materialId="119" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="3"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+        </Material>
+        <Material name="08Mat_plasticPainted" materialId="120" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="9"/>
+        </Material>
+        <Material name="08Mat_silverScratched" materialId="121" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="6"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="7"/>
+        </Material>
+        <Material name="08Mat_silverBumpy" materialId="122" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="10"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="12"/>
+        </Material>
+        <Material name="08Mat_metalPainted" materialId="123" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="3"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="5"/>
+        </Material>
+        <Material name="08Mat_plasticPainted" materialId="124" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="9"/>
+        </Material>
+        <Material name="08Mat_silverScratched" materialId="125" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="6"/>
+            <Custommap name="detailNormal" fileId="4"/>
+            <Custommap name="detailSpecular" fileId="7"/>
+        </Material>
+        <Material name="08Mat_silverBumpy" materialId="126" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="10"/>
+            <Custommap name="detailNormal" fileId="11"/>
+            <Custommap name="detailSpecular" fileId="12"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="nbg.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <TransformGroup name="transform" translation="0 0.41 -0.15" scale="0.79 0.8 0.8" nodeId="1030">
             <TransformGroup name="transform" translation="0 -0.3 0" scale="0.96 1.03 1.05" nodeId="1031">
-                <Shape shapeId="1" name="fibre" translation="0 -0.86 0" scale="1.06 1.2 1" visibility="false" nodeId="1032" materialIds="100" castsShadows="true" receiveShadows="true" distanceBlending="false">
-                    <Shape shapeId="2" name="fibre (2)" nodeId="1033" materialIds="94" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                <Shape shapeId="1" name="fibre" translation="0 -0.86 0" scale="1.06 1.2 1" visibility="false" nodeId="1032" materialIds="103 104 105 106" castsShadows="true" receiveShadows="true" distanceBlending="false">
+                    <Shape shapeId="2" name="fibre (2)" nodeId="1033" materialIds="107 108 109 110" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
                 </Shape>
                 <TransformGroup name="transform" translation="0.15 -0.1 0" nodeId="1034">
-                    <Shape shapeId="3" name="fibre (3)" nodeId="1035" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
-                    <Shape shapeId="4" name="fibre (1)" nodeId="1036" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                    <Shape shapeId="3" name="fibre (3)" nodeId="1035" materialIds="111 112 113 114" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                    <Shape shapeId="4" name="fibre (1)" nodeId="1036" materialIds="115 116 117 118" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
                 </TransformGroup>
                 <TransformGroup name="transform" translation="0.31 -0.1 0" nodeId="1037">
-                    <Shape shapeId="5" name="fibre (3)" nodeId="1038" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
-                    <Shape shapeId="6" name="fibre (1)" nodeId="1039" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                    <Shape shapeId="5" name="fibre (3)" nodeId="1038" materialIds="119 120 121 122" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                    <Shape shapeId="6" name="fibre (1)" nodeId="1039" materialIds="123 124 125 126" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
                 </TransformGroup>
             </TransformGroup>
-            <Shape shapeId="7" name="f2" translation="0 3.35 -1.1" rotation="0 -94 90" scale="1.8 1.76 1.94" nodeId="1040" materialIds="86" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="f2" translation="0 3.35 -1.1" rotation="0 -94 90" scale="1.8 1.76 1.94" nodeId="1040" materialIds="101 102" castsShadows="true" receiveShadows="true"/>
             <TransformGroup name="transform" translation="0.7 1.86 -1.7" nodeId="1041"/>
         </TransformGroup>
     </Scene>

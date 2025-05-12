@@ -6,6 +6,9 @@
     <Files>
         <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
         <File fileId="2" filename="SCAFX_MASSEY/dirt/texturas/1.dds"/>
+        <File fileId="4" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="5" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="6" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
     </Files>
     <Materials>
         <Material name="02_1523_Mat" materialId="4" diffuseColor="0.0941177 0.0784314 0.0784314 1" customShaderId="3">
@@ -13,12 +16,20 @@
             <CustomParameter name="RDT" value="0 0 0 0"/>
             <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
         </Material>
+        <Material name="02_1523_Mat_metalPainted" materialId="5" diffuseColor="0.0941177 0.0784314 0.0784314 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="4"/>
+            <Custommap name="detailNormal" fileId="5"/>
+            <Custommap name="detailSpecular" fileId="6"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="CY.i3d.shapes"/>
     <Dynamics/>
     <Scene>
-        <Shape shapeId="1" name="hmt (1)" translation="0 1.04 1.63" rotation="90 90 0" scale="1.04 1.4 2.6" nodeId="964" materialIds="4" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="1" name="hmt (1)" translation="0.46 0 0" nodeId="965" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="hmt (1)" translation="0 1.04 1.63" rotation="90 90 0" scale="1.04 1.4 2.6" nodeId="964" materialIds="5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="1" name="hmt (1)" translation="0.46 0 0" nodeId="965" materialIds="5" castsShadows="true" receiveShadows="true"/>
         </Shape>
     </Scene>
 </i3D>

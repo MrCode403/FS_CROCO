@@ -10,6 +10,12 @@
         <File fileId="11" filename="SCAFX_MASSEY/SCAFX_TIGER/scafionxnovo/SCAFIONX_FENDT/PANNU_FENDT_75/PANNU_FENDT/PANNU_5620/FARMTRAC/60RX/jd/universal/material/vehicleShader.xml"/>
         <File fileId="9" filename="SCAFX_MASSEY/SCAFX_TIGER/scafionxnovo/SCAFIONX_FENDT/PANNU_FENDT_75/PANNU_FENDT/material/wheel_back.dds"/>
         <File fileId="2" filename="SCAFX_MASSEY/texturas/1.dds"/>
+        <File fileId="17" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="18" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="19" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="20" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+        <File fileId="21" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+        <File fileId="22" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
     </Files>
     <Materials>
         <Material name="guma" materialId="35" specularColor="0.294118 1 0.294118">
@@ -39,13 +45,49 @@
             <CustomParameter name="morphPosition" value="-0.583 -1.031 0.5 0.05"/>
             <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
         </Material>
+        <Material name="Material.004_metalPainted" materialId="117" diffuseColor="0.2 0.2 0.2 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="17"/>
+            <Custommap name="detailNormal" fileId="18"/>
+            <Custommap name="detailSpecular" fileId="19"/>
+        </Material>
+        <Material name="Material.004_metalPainted" materialId="118" diffuseColor="0.2 0.2 0.2 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="17"/>
+            <Custommap name="detailNormal" fileId="18"/>
+            <Custommap name="detailSpecular" fileId="19"/>
+        </Material>
+        <Material name="Material.004_metalPainted" materialId="119" diffuseColor="0.2 0.2 0.2 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="17"/>
+            <Custommap name="detailNormal" fileId="18"/>
+            <Custommap name="detailSpecular" fileId="19"/>
+        </Material>
+        <Material name="TM900_mat_rubberBlack" materialId="120" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+            <Normalmap fileId="15"/>
+            <Glossmap fileId="16"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="morphPosition" value="-0.583 -1.031 0.5 0.05"/>
+            <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
+            <CustomParameter name="porosity" value="0.5"/>
+            <Custommap name="detailDiffuse" fileId="20"/>
+            <Custommap name="detailNormal" fileId="21"/>
+            <Custommap name="detailSpecular" fileId="22"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="FT.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <TransformGroup name="transform" translation="0.01 0 0" nodeId="997">
             <TransformGroup name="Normali" scale="0.64 0.68 0.68" nodeId="998">
-                <Shape shapeId="1" name="Cylinder.001" rotation="0 0 90" scale="0.9 0.755 0.9" nodeId="999" materialIds="67" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="1" name="Cylinder.001" rotation="0 0 90" scale="0.9 0.755 0.9" nodeId="999" materialIds="117" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="2" name="Cylinder.003" visibility="false" nodeId="1000" materialIds="70" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="3" name="wheel_back" visibility="false" nodeId="1001" materialIds="35" castsShadows="true" receiveShadows="true">
                     <Shape shapeId="4" name="Circle" visibility="false" nodeId="1002" materialIds="63" castsShadows="true" receiveShadows="true"/>
@@ -54,8 +96,8 @@
                     <Shape shapeId="4" name="Circle" visibility="false" nodeId="1004" materialIds="63" castsShadows="true" receiveShadows="true"/>
                 </Shape>
                 <Shape shapeId="5" name="Cylinder" translation="0.06 0 0" scale="6 350 350" visibility="false" nodeId="1005" materialIds="85" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
-                <Shape shapeId="6" name="aroEstreitoDireita" translation="-0.077 0 0" scale="0.7 1.3 1.3" clipDistance="300" nodeId="1006" materialIds="67" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="7" name="lod0" scale="0.65 0.81 0.81" clipDistance="1000" nodeId="1007" materialIds="116" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="aroEstreitoDireita" translation="-0.077 0 0" scale="0.7 1.3 1.3" clipDistance="300" nodeId="1006" materialIds="118 119" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="7" name="lod0" scale="0.65 0.81 0.81" clipDistance="1000" nodeId="1007" materialIds="120" castsShadows="true" receiveShadows="true"/>
             </TransformGroup>
         </TransformGroup>
     </Scene>

@@ -8,9 +8,12 @@
         <File fileId="2" filename="SCAFIONX_ARJUN/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/1.dds"/>
         <File fileId="8" filename="SCAFIONX_ARJUN/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFX_TEXTURES/1.dds"/>
         <File fileId="7" filename="SCAFIONX_ARJUN/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFX_TEXTURES/s-l1600 (1).dds"/>
-        <File fileId="3" filename="SCAFIONX_ARJUN/SCAFX_MODEL/vehicleShader.xml"/>
+        <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
         <File fileId="12" filename="SCAFIONX_ARJUN/SCAFX_MODEL/vierkant/SCAFIONX_855/SCAFIONX_SWARAJ/PANNU_SWARAJ/jd/universal/5620/Textures/rost.dds"/>
         <File fileId="9" filename="SCAFIONX_ARJUN/SCAFX_MODEL/vierkant/SCAFIONX_855/SCAFIONX_SWARAJ/PANNU_SWARAJ/jd/universal/5620/arjun/arjun/Tex/trololo/Textures/patrauke.dds"/>
+        <File fileId="16" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="17" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="18" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
     </Files>
     <Materials>
         <Material name="i3d_default_material" materialId="39" diffuseColor="0.294118 0.294118 0.294118 1" customShaderId="3">
@@ -36,19 +39,36 @@
             <CustomParameter name="RDT" value="0 0 0 0"/>
             <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
         </Material>
+        <Material name="i3d_default_material_metalPainted" materialId="130" diffuseColor="0.294118 0.294118 0.294118 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="16"/>
+            <Custommap name="detailNormal" fileId="17"/>
+            <Custommap name="detailSpecular" fileId="18"/>
+        </Material>
+        <Material name="UnnamedMaterial_metalPainted" materialId="131" customShaderId="3" shadingRate="2x2">
+            <Texture fileId="7"/>
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="16"/>
+            <Custommap name="detailNormal" fileId="17"/>
+            <Custommap name="detailSpecular" fileId="18"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="bc.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <TransformGroup name="transform" translation="0 -0.193191 -0.545946" scale="0.8 1 1" nodeId="1006">
             <TransformGroup name="transform" translation="0 -0.0266249 0.575532" scale="0.008 0.01 0.01" nodeId="1007">
-                <Shape shapeId="1" name="Cube.001" translation="0 143.276 73.3955" scale="27.9334 15.3327 4.13906" nodeId="1008" materialIds="39">
-                    <Shape shapeId="2" name="cube" scale="2 2 1.4" nodeId="1009" materialIds="129" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                <Shape shapeId="1" name="Cube.001" translation="0 143.276 73.3955" scale="27.9334 15.3327 4.13906" nodeId="1008" materialIds="130">
+                    <Shape shapeId="2" name="cube" scale="2 2 1.4" nodeId="1009" materialIds="131" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
                 </Shape>
             </TransformGroup>
             <TransformGroup name="transform" translation="0.0831261 -0.128528 -0.134619" nodeId="1010">
-                <Shape shapeId="3" name="Mesh1_Model" translation="-0.01 1.74 1.233" rotation="0 0 90" scale="8 5 8" nodeId="1011" materialIds="64,64" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="3" name="Mesh1_Model" translation="-0.245 1.742 1.233" rotation="0 0 90" scale="8 8 8" nodeId="1012" materialIds="64,64" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="Mesh1_Model" translation="-0.01 1.74 1.233" rotation="0 0 90" scale="8 5 8" nodeId="1011" materialIds="64 64" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="Mesh1_Model" translation="-0.245 1.742 1.233" rotation="0 0 90" scale="8 8 8" nodeId="1012" materialIds="64 64" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="4" name="Dvi" translation="-0.2599 1.8699 1.1" rotation="90 0 -75" scale="0.9 0.9 0.9" nodeId="1013" materialIds="68" castsShadows="true" receiveShadows="true"/>
                 <TransformGroup name="straight_L" translation="-0.334 1.882 0.83" rotation="92 0 -1" scale="0.3 0.2 0.3" clipDistance="300" nodeId="1014">
                     <Shape shapeId="5" name="straight_left" translation="0.252 0.756 0.001" visibility="false" clipDistance="300" nodeId="1015" materialIds="112" castsShadows="true" receiveShadows="true"/>
@@ -69,13 +89,13 @@
                     <Shape shapeId="4" name="Dvi" translation="0.177 1.9088 1.223" rotation="0 0 -90" scale="0.87 0.9 0.9" nodeId="1028" materialIds="68" castsShadows="true" receiveShadows="true"/>
                     <Shape shapeId="4" name="Dvi" translation="0.298 1.91766 1.00942" rotation="-90 -0 -98" scale="0.8 0.9 0.8" nodeId="1029" materialIds="68" castsShadows="true" receiveShadows="true"/>
                 </TransformGroup>
-                <Shape shapeId="3" name="Mesh1_Model" translation="-0.33 1.818 0.9033" rotation="0 0 90" scale="6 8 7" nodeId="1030" materialIds="64,64" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="4" name="Dvi" translation="-0.260194 1.8186 0.698" rotation="90 180 -205" scale="0.77 0.63 0.71" nodeId="1031" materialIds="66" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="Mesh1_Model" translation="-0.33 1.818 0.9033" rotation="0 0 90" scale="6 8 7" nodeId="1030" materialIds="64 64" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="Dvi" translation="-0.260194 1.8186 0.698" rotation="90 180 -205" scale="0.77 0.63 0.71" nodeId="1031" materialIds="68" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="4" name="Dvi" translation="-0.306958 1.89264 1.32821" rotation="90 -0 -180" scale="0.9 0.9 0.6" nodeId="1032" materialIds="68" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="4" name="Dvi" translation="-0.306958 1.88613 1.33855" rotation="-90 -0 91.0075" scale="0.9 0.9 0.6" nodeId="1033" materialIds="68" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="4" name="Dvi" translation="0.13524 1.89264 1.32821" rotation="90 -0 -180" scale="0.9 0.9 0.6" nodeId="1034" materialIds="68" castsShadows="true" receiveShadows="true"/>
                 <Shape shapeId="4" name="Dvi" translation="0.138871 1.89793 1.32632" rotation="-90 -0 -91.007" scale="0.9 0.9 0.6" nodeId="1035" materialIds="68" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="3" name="Mesh1_Model" translation="-0.163833 1.742 1.233" rotation="0 0 90" scale="8 8 8" nodeId="1036" materialIds="64,64" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="Mesh1_Model" translation="-0.163833 1.742 1.233" rotation="0 0 90" scale="8 8 8" nodeId="1036" materialIds="64 64" castsShadows="true" receiveShadows="true"/>
             </TransformGroup>
         </TransformGroup>
     </Scene>

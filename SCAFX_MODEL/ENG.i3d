@@ -22,6 +22,27 @@
         <File fileId="33" filename="SCAFX_6049/dirt/texturas/1.dds"/>
         <File fileId="8" filename="SCAFX_6049/texturas/1.dds"/>
         <File fileId="29" filename="SCAFX_6049/vierkant/Picsart_23-05-10_20-03-12-628.dds"/>
+        <File fileId="34" filename="$data/shared/detailLibrary/metallic/metalGalvanized_diffuse.png"/>
+        <File fileId="35" filename="$data/shared/detailLibrary/metallic/metalGalvanized_normal.png"/>
+        <File fileId="36" filename="$data/shared/detailLibrary/metallic/metalGalvanized_specular.png"/>
+        <File fileId="37" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+        <File fileId="38" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="39" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+        <File fileId="40" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="41" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+        <File fileId="42" filename="$data/shared/detailLibrary/metallic/scratched_diffuse.png"/>
+        <File fileId="43" filename="$data/shared/detailLibrary/metallic/scratched_specular.png"/>
+        <File fileId="44" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubberBlack_diffuse.png"/>
+        <File fileId="45" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+        <File fileId="46" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+        <File fileId="47" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1Bluish_diffuse.png"/>
+        <File fileId="48" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_normal.png"/>
+        <File fileId="49" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_specular.png"/>
+        <File fileId="50" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+        <File fileId="51" filename="$data/shared/detailLibrary/metallic/silverBumpy_normal.png"/>
+        <File fileId="52" filename="$data/shared/detailLibrary/metallic/silverBumpy_specular.png"/>
+        <File fileId="53" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="54" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
     </Files>
     <Materials>
         <Material name="agrimaxTeris_mat" materialId="26" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
@@ -176,24 +197,286 @@
             <CustomParameter name="morphPosition" value="-0.416 -0.78 0.5 0.05"/>
             <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
         </Material>
+        <Material name="Material.021_metalGalvanized" materialId="157" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.020000 0.020000 0.020000"/>
+            <Custommap name="detailDiffuse" fileId="34"/>
+            <Custommap name="detailNormal" fileId="35"/>
+            <Custommap name="detailSpecular" fileId="36"/>
+        </Material>
+        <Material name="Material.021_plasticPaintedBlack" materialId="158" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+            <Custommap name="detailDiffuse" fileId="37"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="39"/>
+        </Material>
+        <Material name="Material.021_silverScratched" materialId="159" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="1.000000 0.000000 0.000000"/>
+            <Custommap name="detailDiffuse" fileId="40"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="41"/>
+        </Material>
+        <Material name="Material.021_copperScratched" materialId="160" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.9559 0.3467 0.2384"/>
+            <Custommap name="detailDiffuse" fileId="42"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="43"/>
+        </Material>
+        <Material name="Material.021_rubberBlack" materialId="161" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="0.5"/>
+            <Custommap name="detailDiffuse" fileId="44"/>
+            <Custommap name="detailNormal" fileId="45"/>
+            <Custommap name="detailSpecular" fileId="46"/>
+        </Material>
+        <Material name="Material.021_fabric1Bluish" materialId="162" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="1.0"/>
+            <Custommap name="detailDiffuse" fileId="47"/>
+            <Custommap name="detailNormal" fileId="48"/>
+            <Custommap name="detailSpecular" fileId="49"/>
+        </Material>
+        <Material name="Material.021_silverScratched" materialId="163" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="40"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="41"/>
+        </Material>
+        <Material name="Material.021_silverBumpy" materialId="164" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="50"/>
+            <Custommap name="detailNormal" fileId="51"/>
+            <Custommap name="detailSpecular" fileId="52"/>
+        </Material>
+        <Material name="Material.021_metalGalvanized" materialId="165" diffuseColor="1 1 0.0941177 1" customShaderId="3" customShaderVariation="colorMask">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.020000 0.020000 0.020000"/>
+            <Custommap name="detailDiffuse" fileId="34"/>
+            <Custommap name="detailNormal" fileId="35"/>
+            <Custommap name="detailSpecular" fileId="36"/>
+        </Material>
+        <Material name="firestone_800_mat_rubberBlack" materialId="166" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+            <Normalmap fileId="14"/>
+            <Glossmap fileId="15"/>
+            <CustomParameter name="RDT" value="0 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="0.5"/>
+            <Custommap name="detailDiffuse" fileId="44"/>
+            <Custommap name="detailNormal" fileId="45"/>
+            <Custommap name="detailSpecular" fileId="46"/>
+        </Material>
+        <Material name="default_metalPainted" materialId="167" diffuseColor="0.6 0.6 0.54902 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="extensorRoda_mat_metalPainted" materialId="168" diffuseColor="0.0784314 0.0784314 0.0941177 1" specularColor="0.6 1 0.6" customShaderId="3" customShaderVariation="colorMask">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.050000 0.050000 0.050000"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="extensorRoda_mat_metalPainted" materialId="169" diffuseColor="0.0784314 0.0784314 0.0941177 1" specularColor="0.6 1 0.6" customShaderId="3" customShaderVariation="colorMask">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.050000 0.050000 0.050000"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="Material.009_metalPainted" materialId="170" diffuseColor="0.6 0.6 0.494118 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="tractor85_mat2_rubberBlack" materialId="171" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+            <Normalmap fileId="24"/>
+            <Glossmap fileId="25"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="morphPosition" value="-0.416 -0.78 0.5 0.05"/>
+            <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
+            <CustomParameter name="porosity" value="0.5"/>
+            <Custommap name="detailDiffuse" fileId="44"/>
+            <Custommap name="detailNormal" fileId="45"/>
+            <Custommap name="detailSpecular" fileId="46"/>
+        </Material>
+        <Material name="TM600_mat5_rubberBlack" materialId="172" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+            <Normalmap fileId="26"/>
+            <Glossmap fileId="27"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="morphPosition" value="-0.432 -0.741 0.5 0.05"/>
+            <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
+            <CustomParameter name="porosity" value="0.5"/>
+            <Custommap name="detailDiffuse" fileId="44"/>
+            <Custommap name="detailNormal" fileId="45"/>
+            <Custommap name="detailSpecular" fileId="46"/>
+        </Material>
+        <Material name="agrimaxTeris_mat_rubberBlack" materialId="173" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+            <Normalmap fileId="30"/>
+            <Glossmap fileId="31"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="morphPosition" value="-0.44958 -0.846 0.5 0.1"/>
+            <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
+            <CustomParameter name="porosity" value="0.5"/>
+            <Custommap name="detailDiffuse" fileId="44"/>
+            <Custommap name="detailNormal" fileId="45"/>
+            <Custommap name="detailSpecular" fileId="46"/>
+        </Material>
+        <Material name="TM900_mat_rubberBlack" materialId="174" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+            <Normalmap fileId="32"/>
+            <Glossmap fileId="33"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="morphPosition" value="-0.435 -0.804 0.5 0.05"/>
+            <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
+            <CustomParameter name="porosity" value="0.5"/>
+            <Custommap name="detailDiffuse" fileId="44"/>
+            <Custommap name="detailNormal" fileId="45"/>
+            <Custommap name="detailSpecular" fileId="46"/>
+        </Material>
+        <Material name="Material.001_metalPainted" materialId="175" diffuseColor="0.0431373 0.0431373 0.0431373 1" customShaderId="3">
+            <Glossmap fileId="12"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="hub004_mat_metalPainted" materialId="176" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+            <Normalmap fileId="19"/>
+            <Glossmap fileId="20"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.030000 0.030000 0.030000"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="hub004_mat_silverScratched" materialId="177" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="colorMask">
+            <Normalmap fileId="19"/>
+            <Glossmap fileId="20"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.980000 0.980000 0.980000"/>
+            <Custommap name="detailDiffuse" fileId="40"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="41"/>
+        </Material>
+        <Material name="Material #25_metalPainted" materialId="178" diffuseColor="0.0156863 0.0313726 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="Material #25_silverScratched" materialId="179" diffuseColor="0.0156863 0.0313726 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="40"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="41"/>
+        </Material>
+        <Material name="Material #25_metalPainted" materialId="180" diffuseColor="0.0156863 0.0313726 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="Material #25_metalPainted" materialId="181" diffuseColor="0.0156863 0.0313726 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="Material #25_metalPainted" materialId="182" diffuseColor="0.0156863 0.0313726 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="Material #25_metalPainted" materialId="183" diffuseColor="0.0156863 0.0313726 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="Material #25_metalPainted" materialId="184" diffuseColor="0.0156863 0.0313726 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
+        <Material name="Material #25_metalPainted" materialId="185" diffuseColor="0.0156863 0.0313726 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="53"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="54"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="ENG.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <TransformGroup name="transform" translation="0 -0.066 -0.08" scale="0.01 0.01 0.01" nodeId="1056">
-            <Shape shapeId="1" name="Scafx_eng" rotation="90 -0 0" nodeId="1057" materialIds="114" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="1" name="Scafx_eng" rotation="90 -0 0" nodeId="1057" materialIds="157 158 159 160 161 162 163 164" castsShadows="true" receiveShadows="true">
                 <Shape shapeId="2" name="Scafx_eng (1).001" translation="6.6 0 14.2" scale="1.3 1 1.1" nodeId="1058" materialIds="111" castsShadows="true" receiveShadows="true"/>
-                <Shape shapeId="3" name="Scafx_eng (1)" nodeId="1059" materialIds="77" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="Scafx_eng (1)" nodeId="1059" materialIds="175" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="Scafx_eng (3)" translation="0 1 -2" rotation="90 -0 0" scale="0.933 0.85 1" nodeId="1060" materialIds="114" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="Scafx_eng (3)" translation="0 1 -2" rotation="90 -0 0" scale="0.933 0.85 1" nodeId="1060" materialIds="165" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
         <TransformGroup name="Tras" scale="0.78 0.96 0.96" nodeId="442">
-            <Shape shapeId="5" name="Lizard" visibility="false" clipDistance="300" nodeId="443" materialIds="48" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="rodaFora" translation="0.02 0 0" clipDistance="300" nodeId="444" materialIds="43" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="7" name="longo" translation="-0.2 0 0" scale="0.35 1 1" clipDistance="300" nodeId="445" materialIds="46" castsShadows="true" receiveShadows="true">
-                <Shape shapeId="8" name="left" translation="-0.4 0 0" clipDistance="150" nodeId="446" materialIds="49" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="Lizard" visibility="false" clipDistance="300" nodeId="443" materialIds="166" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="rodaFora" translation="0.02 0 0" clipDistance="300" nodeId="444" materialIds="167" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="longo" translation="-0.2 0 0" scale="0.35 1 1" clipDistance="300" nodeId="445" materialIds="168 169" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="8" name="left" translation="-0.4 0 0" clipDistance="150" nodeId="446" materialIds="176 177" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="9" name="Cylinder.003" translation="-1.1 0 0" rotation="-90 90 0" scale="0.78 0.8 0.78" nodeId="447" materialIds="88" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="9" name="Cylinder.003" translation="-1.1 0 0" rotation="-90 90 0" scale="0.78 0.8 0.78" nodeId="447" materialIds="170" castsShadows="true" receiveShadows="true"/>
             <TransformGroup name="transform" translation="-0.0666 0 0" scale="0.011 0.014 0.014" nodeId="448">
                 <Shape shapeId="10" name="New Project (1)" translation="-2 9 0" rotation="90 0 -90" scale="55 55 70" nodeId="449" materialIds="107"/>
                 <Shape shapeId="10" name="New Project (1)" translation="-2 -9 0" rotation="90 0 -90" scale="55 55 70" nodeId="450" materialIds="107"/>
@@ -204,58 +487,58 @@
                 <Shape shapeId="10" name="New Project (1)" translation="-2 -6 7" rotation="90 0 -90" scale="55 55 70" nodeId="455" materialIds="107"/>
                 <Shape shapeId="10" name="New Project (1)" translation="-2 -6 -7" rotation="90 0 -90" scale="55 55 70" nodeId="456" materialIds="107"/>
             </TransformGroup>
-            <Shape shapeId="11" name="lod0" scale="1.18 1 1" visibility="false" clipDistance="1000" nodeId="457" materialIds="156" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="12" name="lod0" scale="1.17 1 1" visibility="false" clipDistance="1000" nodeId="458" materialIds="154" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="lod0" scale="1.18 1 1" visibility="false" clipDistance="1000" nodeId="457" materialIds="171" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="lod0" scale="1.17 1 1" visibility="false" clipDistance="1000" nodeId="458" materialIds="172" castsShadows="true" receiveShadows="true"/>
             <TransformGroup name="Pesos" translation="0.01 0 0" scale="0.1 0.46 0.46" nodeId="459">
-                <Shape shapeId="13" name="Tube01" translation="0.061 0 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="460" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="13" name="Tube01" translation="0.061 0 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="460" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                 <TransformGroup name="Pesos" translation="0.068 0 0" nodeId="461">
-                    <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="462" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="462" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                     <TransformGroup name="Pesos" translation="0.066 0 0" nodeId="463">
-                        <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="464" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="464" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                     </TransformGroup>
                 </TransformGroup>
                 <TransformGroup name="Pesos" translation="0.2 0 0" nodeId="465">
-                    <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="466" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="466" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                     <TransformGroup name="Pesos" translation="0.055 0 0" nodeId="467">
-                        <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="468" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="468" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                     </TransformGroup>
                 </TransformGroup>
                 <TransformGroup name="Pesos" scale="1 0.6 0.6" nodeId="469">
-                    <Shape shapeId="13" name="Tube01" translation="0 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="470" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="13" name="Tube01" translation="0 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="470" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                     <TransformGroup name="Pesos" translation="0.068 0 0" nodeId="471">
-                        <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="472" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="472" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         <TransformGroup name="Pesos" translation="0.066 0 0" nodeId="473">
-                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="474" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="474" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         </TransformGroup>
                     </TransformGroup>
                     <TransformGroup name="Pesos" translation="0.2 0 0" nodeId="475">
-                        <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="476" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="476" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         <TransformGroup name="Pesos" translation="0.055 0 0" nodeId="477">
-                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="478" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="478" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         </TransformGroup>
                     </TransformGroup>
                     <TransformGroup name="Pesos" translation="0.2 0 0" scale="1 0.6 0.6" nodeId="479">
-                        <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="480" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="480" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         <TransformGroup name="Pesos" translation="0.055 0 0" nodeId="481">
-                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="482" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="482" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         </TransformGroup>
                     </TransformGroup>
                     <TransformGroup name="Pesos" translation="0.2 0 0" scale="1 0.36 0.36" nodeId="483">
-                        <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="484" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="484" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         <TransformGroup name="Pesos" translation="0.055 0 0" nodeId="485">
-                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="486" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="486" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         </TransformGroup>
                     </TransformGroup>
                     <TransformGroup name="Pesos" translation="0.2 0 0" scale="1 0.2 0.2" nodeId="487">
-                        <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="488" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                        <Shape shapeId="13" name="Tube01" translation="0.061 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="488" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         <TransformGroup name="Pesos" translation="0.055 0 0" nodeId="489">
-                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="490" materialIds="75,76,76,76,76,76,76" castsShadows="true" receiveShadows="true"/>
+                            <Shape shapeId="13" name="Tube01" translation="0.06089 -2.66167e-09 0" rotation="0 0 -90" scale="0.45 0.5 0.45" nodeId="490" materialIds="178 179 180 181 182 183 184 185" castsShadows="true" receiveShadows="true"/>
                         </TransformGroup>
                     </TransformGroup>
                 </TransformGroup>
             </TransformGroup>
-            <Shape shapeId="14" name="lod0" scale="0.85 0.977 0.977" visibility="false" nodeId="491" materialIds="26" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="15" name="lod0" translation="0.02 0 0" scale="0.954 0.98 0.98" clipDistance="1000" nodeId="492" materialIds="155" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="14" name="lod0" scale="0.85 0.977 0.977" visibility="false" nodeId="491" materialIds="173" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="15" name="lod0" translation="0.02 0 0" scale="0.954 0.98 0.98" clipDistance="1000" nodeId="492" materialIds="174" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
     </Scene>
 </i3D>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<wheel>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/wheel.xsd">
     <default>
-        <physics radius="0.76" width="1" mass="0.189" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
-        <tire filename="wheels/Rodas.i3d" nodeLeft="0|2|1|1" nodeRight="0|2|1|0" maxDeformation="0.065" isCareWheel="false" tireTrackAtlasIndex="5" />
+        <physics radius="0.76" width="1" mass="0.189" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2"/>
+        <tire filename="wheels/Rodas.i3d" nodeLeft="0|2|1|1" nodeRight="0|2|1|0" maxDeformation="0.065" tireTrackAtlasIndex="5"/>
     </default>
 
 </wheel>

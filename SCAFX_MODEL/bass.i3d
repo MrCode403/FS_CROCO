@@ -9,6 +9,19 @@
         <File fileId="11" filename="SCAFX_MODEL/fibre/texturas/vidro_escuro.dds"/>
         <File fileId="26" filename="SCAFX_MODEL/fibre/vierkant/SCAFIONX/texturas/exch.dds"/>
         <File fileId="2" filename="SCAFX_MODEL/texturas/1.dds"/>
+        <File fileId="27" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+        <File fileId="28" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="29" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+        <File fileId="30" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+        <File fileId="31" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+        <File fileId="32" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+        <File fileId="33" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+        <File fileId="34" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+        <File fileId="35" filename="$data/shared/detailLibrary/metallic/silverBumpy_normal.png"/>
+        <File fileId="36" filename="$data/shared/detailLibrary/metallic/silverBumpy_specular.png"/>
+        <File fileId="37" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_diffuse.png"/>
+        <File fileId="38" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_normal.png"/>
+        <File fileId="39" filename="$data/shared/detailLibrary/nonMetallic/fabric/fabric1_specular.png"/>
     </Files>
     <Materials>
         <Material name="02matVis" materialId="7" diffuseColor="0.0392157 0.0392157 0.0392157 1" customShaderId="3">
@@ -101,12 +114,247 @@
             <CustomParameter name="blinkOffset" value="0.6 0 1 0"/>
             <CustomParameter name="blinkSpeed" value="11 0 0 0"/>
         </Material>
+        <Material name="Material.001_metalPainted" materialId="130" diffuseColor="0.0941177 0.0941177 0.0941177 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="27"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="29"/>
+        </Material>
+        <Material name="Material.001_plasticPainted" materialId="131" diffuseColor="0.0941177 0.0941177 0.0941177 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="30"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="31"/>
+        </Material>
+        <Material name="Material.001_silverScratched" materialId="132" diffuseColor="0.0941177 0.0941177 0.0941177 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="32"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="33"/>
+        </Material>
+        <Material name="Material.001_silverBumpy" materialId="133" diffuseColor="0.0941177 0.0941177 0.0941177 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+            <Custommap name="detailDiffuse" fileId="34"/>
+            <Custommap name="detailNormal" fileId="35"/>
+            <Custommap name="detailSpecular" fileId="36"/>
+        </Material>
+        <Material name="Material.013_metalPainted" materialId="134" diffuseColor="0.2 0.054902 0.054902 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="27"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="29"/>
+        </Material>
+        <Material name="Material.013_plasticPainted" materialId="135" diffuseColor="0.2 0.054902 0.054902 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="30"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="31"/>
+        </Material>
+        <Material name="Material.013_fabric1" materialId="136" diffuseColor="0.2 0.054902 0.054902 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="1.0"/>
+            <Custommap name="detailDiffuse" fileId="37"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="39"/>
+        </Material>
+        <Material name="Material.013_silverScratched" materialId="137" diffuseColor="0.2 0.054902 0.054902 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="32"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="33"/>
+        </Material>
+        <Material name="Material.020_metalPainted" materialId="138" diffuseColor="0.0666667 0.0666667 0.0666667 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="27"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="29"/>
+        </Material>
+        <Material name="Material.020_plasticPainted" materialId="139" diffuseColor="0.0666667 0.0666667 0.0666667 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="30"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="31"/>
+        </Material>
+        <Material name="Material.020_fabric1" materialId="140" diffuseColor="0.0666667 0.0666667 0.0666667 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="1.0"/>
+            <Custommap name="detailDiffuse" fileId="37"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="39"/>
+        </Material>
+        <Material name="Material.020_silverScratched" materialId="141" diffuseColor="0.0666667 0.0666667 0.0666667 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="32"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="33"/>
+        </Material>
+        <Material name="Material.014_metalPainted" materialId="142" diffuseColor="0.6 0.4 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="27"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="29"/>
+        </Material>
+        <Material name="Material.014_plasticPainted" materialId="143" diffuseColor="0.6 0.4 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="30"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="31"/>
+        </Material>
+        <Material name="Material.014_fabric1" materialId="144" diffuseColor="0.6 0.4 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="1.0"/>
+            <Custommap name="detailDiffuse" fileId="37"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="39"/>
+        </Material>
+        <Material name="Material.014_silverScratched" materialId="145" diffuseColor="0.6 0.4 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="32"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="33"/>
+        </Material>
+        <Material name="Material.010_metalPainted" materialId="146" diffuseColor="1 0 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="27"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="29"/>
+        </Material>
+        <Material name="Material.010_plasticPainted" materialId="147" diffuseColor="1 0 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="30"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="31"/>
+        </Material>
+        <Material name="Material.010_fabric1" materialId="148" diffuseColor="1 0 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="1.0"/>
+            <Custommap name="detailDiffuse" fileId="37"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="39"/>
+        </Material>
+        <Material name="Material.010_silverScratched" materialId="149" diffuseColor="1 0 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="32"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="33"/>
+        </Material>
+        <Material name="Material.003_metalPainted" materialId="150" diffuseColor="0.4 0.4 0.4 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="27"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="29"/>
+        </Material>
+        <Material name="Material.003_plasticPainted" materialId="151" diffuseColor="0.4 0.4 0.4 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="30"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="31"/>
+        </Material>
+        <Material name="Material.003_fabric1" materialId="152" diffuseColor="0.4 0.4 0.4 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="1.0"/>
+            <Custommap name="detailDiffuse" fileId="37"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="39"/>
+        </Material>
+        <Material name="Material.003_silverScratched" materialId="153" diffuseColor="0.4 0.4 0.4 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="32"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="33"/>
+        </Material>
+        <Material name="Material.009_metalPainted" materialId="154" customShaderId="3">
+            <Texture fileId="26"/>
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="27"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="29"/>
+        </Material>
+        <Material name="Material.009_plasticPainted" materialId="155" customShaderId="3">
+            <Texture fileId="26"/>
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="30"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="31"/>
+        </Material>
+        <Material name="Material.009_fabric1" materialId="156" customShaderId="3">
+            <Texture fileId="26"/>
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="porosity" value="1.0"/>
+            <Custommap name="detailDiffuse" fileId="37"/>
+            <Custommap name="detailNormal" fileId="38"/>
+            <Custommap name="detailSpecular" fileId="39"/>
+        </Material>
+        <Material name="Material.009_silverScratched" materialId="157" customShaderId="3">
+            <Texture fileId="26"/>
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <Custommap name="detailDiffuse" fileId="32"/>
+            <Custommap name="detailNormal" fileId="28"/>
+            <Custommap name="detailSpecular" fileId="33"/>
+        </Material>
     </Materials>
     <Shapes externalShapesFile="bass.i3d.shapes"/>
     <Dynamics/>
     <Scene>
         <TransformGroup name="transform" translation="0 0 0.144" rotation="90 0 90" scale="0.3 0.66 0.4" nodeId="988">
-            <Shape shapeId="1" name="Scafx_amp" rotation="90 -0 0" nodeId="989" materialIds="65"/>
+            <Shape shapeId="1" name="Scafx_amp" rotation="90 -0 0" nodeId="989" materialIds="130 131 132 133"/>
             <Shape shapeId="2" name="Scafx_amp (1)" rotation="90 -0 0" nodeId="990" materialIds="79"/>
             <Shape shapeId="3" name="Scafx_amp (4)" rotation="90 -0 0" nodeId="991" materialIds="123"/>
             <Shape shapeId="4" name="Scafx_amp (7)" rotation="90 -0 0" nodeId="992" materialIds="127"/>
@@ -118,35 +366,35 @@
         </TransformGroup>
         <TransformGroup name="transform" translation="0 -0.189 -0.023" scale="0.71 1 0.777" nodeId="998">
             <TransformGroup name="transform" translation="0.3 1.1 1.165" rotation="0 180 0" scale="2.66 3 2.6" nodeId="999">
-                <Shape shapeId="10" name="novo_ (11)" rotation="90 -0 0" nodeId="1000" materialIds="88"/>
-                <Shape shapeId="11" name="novo_ (13)" rotation="90 -0 0" nodeId="1001" materialIds="104"/>
-                <Shape shapeId="12" name="novo_ (12)" rotation="90 -0 0" nodeId="1002" materialIds="91"/>
-                <Shape shapeId="10" name="novo_ (11)" translation="0 0 -0.0122" rotation="90 -0 0" scale="1.01 1.01 1.002" nodeId="1003" materialIds="7"/>
+                <Shape shapeId="10" name="novo_ (11)" rotation="90 -0 0" nodeId="1000" materialIds="134 135 136 137"/>
+                <Shape shapeId="11" name="novo_ (13)" rotation="90 -0 0" nodeId="1001" materialIds="138 139 140 141"/>
+                <Shape shapeId="12" name="novo_ (12)" rotation="90 -0 0" nodeId="1002" materialIds="142 143 144 145"/>
+                <Shape shapeId="10" name="novo_ (11)" translation="0 0 -0.0122" rotation="90 -0 0" scale="1.01 1.01 1.002" nodeId="1003" materialIds="134 135 136 137"/>
             </TransformGroup>
             <TransformGroup name="transform" translation="-0.3 1.1 1.165" rotation="0 180 0" scale="2.66 3 2.6" nodeId="1004">
-                <Shape shapeId="10" name="novo_ (11)" rotation="90 -0 0" nodeId="1005" materialIds="88"/>
-                <Shape shapeId="11" name="novo_ (13)" rotation="90 -0 0" nodeId="1006" materialIds="104"/>
-                <Shape shapeId="12" name="novo_ (12)" rotation="90 -0 0" nodeId="1007" materialIds="91"/>
-                <Shape shapeId="10" name="novo_ (11)" translation="0 0 -0.0122" rotation="90 -0 0" scale="1.01 1.01 1.002" nodeId="1008" materialIds="7"/>
+                <Shape shapeId="10" name="novo_ (11)" rotation="90 -0 0" nodeId="1005" materialIds="134 135 136 137"/>
+                <Shape shapeId="11" name="novo_ (13)" rotation="90 -0 0" nodeId="1006" materialIds="138 139 140 141"/>
+                <Shape shapeId="12" name="novo_ (12)" rotation="90 -0 0" nodeId="1007" materialIds="142 143 144 145"/>
+                <Shape shapeId="10" name="novo_ (11)" translation="0 0 -0.0122" rotation="90 -0 0" scale="1.01 1.01 1.002" nodeId="1008" materialIds="134 135 136 137"/>
             </TransformGroup>
         </TransformGroup>
         <TransformGroup name="transform" translation="0 1.3 0.833" rotation="0 180 0" scale="2.27 2 2" nodeId="1009">
             <TransformGroup name="transform" translation="0.12 0.7 -0.14" rotation="37 0 11" scale="0.8 1 1" nodeId="1010">
-                <Shape shapeId="13" name="novo_ (8)" rotation="90 -0 0" nodeId="1011" materialIds="81"/>
-                <Shape shapeId="14" name="novo_ (6)" rotation="90 -0 0" nodeId="1012" materialIds="72"/>
-                <Shape shapeId="15" name="novo_ (7)" rotation="90 -0 0" nodeId="1013" materialIds="78"/>
+                <Shape shapeId="13" name="novo_ (8)" rotation="90 -0 0" nodeId="1011" materialIds="146 147 148 149"/>
+                <Shape shapeId="14" name="novo_ (6)" rotation="90 -0 0" nodeId="1012" materialIds="150 151 152 153"/>
+                <Shape shapeId="15" name="novo_ (7)" rotation="90 -0 0" nodeId="1013" materialIds="154 155 156 157"/>
                 <TransformGroup name="transform" scale="1.05 1 1" nodeId="1014">
                     <Shape shapeId="16" name="novo_ (9)" translation="0 0.009 -0.005" rotation="90 -0 0" nodeId="1015" materialIds="84"/>
                     <Shape shapeId="17" name="novo_ (10)" rotation="90 -0 0" nodeId="1016" materialIds="86"/>
                 </TransformGroup>
             </TransformGroup>
             <TransformGroup name="transform" translation="-0.12 0.7 -0.14" rotation="37 0 -11" scale="0.8 1 1" nodeId="1017">
-                <Shape shapeId="13" name="novo_ (8)" rotation="90 -0 0" nodeId="1018" materialIds="81"/>
-                <Shape shapeId="14" name="novo_ (6)" rotation="90 -0 0" nodeId="1019" materialIds="72"/>
-                <Shape shapeId="15" name="novo_ (7)" rotation="90 -0 0" nodeId="1020" materialIds="78"/>
+                <Shape shapeId="13" name="novo_ (8)" rotation="90 -0 0" nodeId="1018" materialIds="146 147 148 149"/>
+                <Shape shapeId="14" name="novo_ (6)" rotation="90 -0 0" nodeId="1019" materialIds="150 151 152 153"/>
+                <Shape shapeId="15" name="novo_ (7)" rotation="90 -0 0" nodeId="1020" materialIds="154 155 156 157"/>
                 <TransformGroup name="transform" scale="1.05 1 1" nodeId="1021">
-                    <Shape shapeId="16" name="novo_ (9)" translation="0 0.009 -0.005" rotation="90 -0 0" nodeId="1022" materialIds="83"/>
-                    <Shape shapeId="17" name="novo_ (10)" rotation="90 -0 0" nodeId="1023" materialIds="85"/>
+                    <Shape shapeId="16" name="novo_ (9)" translation="0 0.009 -0.005" rotation="90 -0 0" nodeId="1022" materialIds="84"/>
+                    <Shape shapeId="17" name="novo_ (10)" rotation="90 -0 0" nodeId="1023" materialIds="86"/>
                 </TransformGroup>
             </TransformGroup>
         </TransformGroup>
