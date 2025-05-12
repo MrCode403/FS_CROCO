@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="SCAFIONX.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="SCAFX_TEXTURES/texturas/20220709_011710.png"/>
+        <File fileId="8" filename="SCAFX_TEXTURES/texturas/exch.dds"/>
+        <File fileId="9" filename="glowShader.xml"/>
+        <File fileId="2" filename="vehicleShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="01 - Default" materialId="4" customShaderId="2">
+            <Texture fileId="1"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="08Mat" materialId="11" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material #426" materialId="76" customShaderId="9" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="14 0 0 0"/>
+            <CustomParameter name="colorScale" value="0 0 1 0"/>
+            <CustomParameter name="blinkOffset" value="1 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="9 0 0 0"/>
+        </Material>
+        <Material name="Material.002" materialId="88" customShaderId="2">
+            <Texture fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.005" materialId="93" diffuseColor="0.0941177 0.0941177 0.0941177 1" specularColor="1 1 0.494118"/>
+    </Materials>
+    <Shapes externalShapesFile="g.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="2.05553e-08 1.76 2.90487" rotation="0 -90 0" scale="2.8382 2 2.12" nodeId="1094">
+            <Shape shapeId="1" name="hmt (1)" translation="0.045 -0.12 0" rotation="90 0 0" scale="1.03 0.78 2.067" nodeId="1095" materialIds="4"/>
+            <TransformGroup name="transform" translation="-0.961 0.23 0.449" scale="0.4 2.35 2.35" nodeId="1096">
+                <TransformGroup name="transform" translation="0 -0.1 -0.1" scale="1 1 0.94" nodeId="1097">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1098" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1099" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1100" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 0" scale="1 1 0.94" nodeId="1101">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1102" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1103" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1104" materialIds="76"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="transform" nodeId="1105"/>
+            <TransformGroup name="transform" translation="-0.0088 -0.01 0" nodeId="1106">
+                <TransformGroup name="transform" nodeId="1107">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 -0 0" scale="1 1.2 1.2" nodeId="1108" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1109" materialIds="88"/>
+                </TransformGroup>
+                <TransformGroup name="transform" nodeId="1110">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.17" rotation="90 -0 0" scale="1 1.2 1.2" nodeId="1111" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 0.191" scale="0.8 0.5 0.53" nodeId="1112" materialIds="88"/>
+                </TransformGroup>
+                <TransformGroup name="transform" nodeId="1113">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.068" rotation="90 -0 0" scale="1 1.2 1.2" nodeId="1114" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 0.293" scale="0.8 0.5 0.53" nodeId="1115" materialIds="88"/>
+                </TransformGroup>
+                <TransformGroup name="transform" nodeId="1116">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.27" rotation="90 -0 0" scale="1 1.2 1.2" nodeId="1117" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 0.091" scale="0.8 0.5 0.53" nodeId="1118" materialIds="88"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-1.855 0.48 1.347" rotation="0 -90 0" scale="0.7 1 0.76" nodeId="1119">
+                <TransformGroup name="transform" scale="1 1 0.94" nodeId="1120">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1121" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.009" scale="0.8 0.5 0.53" nodeId="1122" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1123" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 0 -0.1" scale="1 1 0.94" nodeId="1124">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1125" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1126" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1127" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 -0.1" scale="1 1 0.94" nodeId="1128">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1129" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1130" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1131" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 0" scale="1 1 0.94" nodeId="1132">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1133" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1134" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1135" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.2 0" scale="1 1 0.94" nodeId="1136">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1137" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1138" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1139" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.2 -0.101" scale="1 1 0.94" nodeId="1140">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1141" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1142" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1143" materialIds="76"/>
+                </TransformGroup>
+            </TransformGroup>
+            <Shape shapeId="5" name="hmt (8)" translation="0.041 -0.14 0" rotation="90 -0 0" scale="1.03 0.794 2.3" nodeId="1144" materialIds="11"/>
+            <TransformGroup name="transform" translation="-1.36494 0.516 0" rotation="0 0 53.4" scale="0.37 0.8 1.023" nodeId="1145">
+                <Shape shapeId="6" name="hmt (9)" translation="0 0 0.19" rotation="90 -0 0" nodeId="1146" materialIds="11"/>
+                <Shape shapeId="7" name="hmt (7)" translation="0 0 -0.168" rotation="90 -0 0" nodeId="1147" materialIds="11"/>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-1.564 0.47 -1.347" rotation="0 90 0" scale="0.7 1 0.76" nodeId="1148">
+                <TransformGroup name="transform" scale="1 1 0.94" nodeId="1149">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1150" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.009" scale="0.8 0.5 0.53" nodeId="1151" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1152" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 0 -0.1" scale="1 1 0.94" nodeId="1153">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1154" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1155" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1156" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 -0.1" scale="1 1 0.94" nodeId="1157">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1158" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1159" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1160" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 0" scale="1 1 0.94" nodeId="1161">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1162" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1163" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1164" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.2 0" scale="1 1 0.94" nodeId="1165">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1166" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1167" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1168" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.2 -0.101" scale="1 1 0.94" nodeId="1169">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1170" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1171" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1172" materialIds="76"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-1.564 0.369 -1.35" rotation="0 90 0" scale="0.7 1 0.76" nodeId="1173">
+                <TransformGroup name="transform" scale="1 1 0.94" nodeId="1174">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1175" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.009" scale="0.8 0.5 0.53" nodeId="1176" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1177" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 0 -0.1" scale="1 1 0.94" nodeId="1178">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1179" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1180" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1181" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 -0.1" scale="1 1 0.94" nodeId="1182">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1183" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1184" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1185" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 0" scale="1 1 0.94" nodeId="1186">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1187" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1188" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1189" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.2 0" scale="1 1 0.94" nodeId="1190">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1191" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1192" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1193" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.2 -0.101" scale="1 1 0.94" nodeId="1194">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1195" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1196" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1197" materialIds="76"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-1.564 0.07 -1.35" rotation="0 90 0" scale="0.7 1 0.76" nodeId="1198">
+                <TransformGroup name="transform" scale="1 1 0.94" nodeId="1199">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1200" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.009" scale="0.8 0.5 0.53" nodeId="1201" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.148 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1202" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 0 -0.1" scale="1 1 0.94" nodeId="1203">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1204" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1205" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1206" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 -0.1" scale="1 1 0.94" nodeId="1207">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1208" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1209" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1210" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 0" scale="1 1 0.94" nodeId="1211">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1212" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1213" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1214" materialIds="76"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-1.855 0.38 1.35" rotation="0 -90 0" scale="0.7 1 0.76" nodeId="1215">
+                <TransformGroup name="transform" scale="1 1 0.94" nodeId="1216">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1217" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.009" scale="0.8 0.5 0.53" nodeId="1218" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1219" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 0 -0.1" scale="1 1 0.94" nodeId="1220">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1221" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1222" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1223" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 -0.1" scale="1 1 0.94" nodeId="1224">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1225" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1226" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1227" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 0" scale="1 1 0.94" nodeId="1228">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1229" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1230" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1231" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.2 0" scale="1 1 0.94" nodeId="1232">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1233" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1234" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1235" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.2 -0.101" scale="1 1 0.94" nodeId="1236">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1237" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1238" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1239" materialIds="76"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-1.855 0.08 1.35" rotation="0 -90 0" scale="0.7 1 0.76" nodeId="1240">
+                <TransformGroup name="transform" scale="1 1 0.94" nodeId="1241">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1242" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.009" scale="0.8 0.5 0.53" nodeId="1243" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1244" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 0 -0.1" scale="1 1 0.94" nodeId="1245">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1246" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1247" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1248" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 -0.1" scale="1 1 0.94" nodeId="1249">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1250" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1251" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1252" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 0" scale="1 1 0.94" nodeId="1253">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1254" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1255" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1256" materialIds="76"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-0.961 0.449 0.449" scale="0.4 2.35 2.35" nodeId="1257">
+                <TransformGroup name="transform" translation="0 -0.1 -0.1" scale="1 1 0.94" nodeId="1258">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1259" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1260" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1261" materialIds="76"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0 -0.1 0" scale="1 1 0.94" nodeId="1262">
+                    <Shape shapeId="2" name="hmt (2)" translation="0 -0.02 -0.37" rotation="90 0 0" scale="1 1.2 1.2" nodeId="1263" materialIds="93"/>
+                    <Shape shapeId="3" name="hmt (5)" translation="-0.32 0.034 -0.0088" scale="0.8 0.5 0.53" nodeId="1264" materialIds="88"/>
+                    <Shape shapeId="4" name="hmt (6)" translation="0 -0.1477 -0.224" rotation="90 -0 0" scale="1 0.4 1" nodeId="1265" materialIds="76"/>
+                </TransformGroup>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

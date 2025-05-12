@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="1104" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="11" filename="SCAFX_MODEL/glowShader.xml"/>
+        <File fileId="2" filename="SCAFX_TEXTURES/1.dds"/>
+        <File fileId="1" filename="SCAFX_TEXTURES/clearGlass_diffuse.dds"/>
+    </Files>
+    <Materials>
+        <Material name="i3d_default_material" materialId="48" diffuseColor="0.8 0.8 0.8 1" specularColor="1 1 1"/>
+        <Material name="Material.014" materialId="95" alphaBlending="true" customShaderId="3">
+            <Texture fileId="1"/>
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.017" materialId="98" specularColor="1 1 1" alphaBlending="true" customShaderId="3">
+            <Texture fileId="1"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.027" materialId="109" diffuseColor="0.0941177 0.0941177 0.0941177 1" alphaBlending="true"/>
+        <Material name="UnnamedMaterial" materialId="130" diffuseColor="1 1 1 1" specularColor="1 1 0.894118" customShaderId="11" shadingRate="1x2">
+            <CustomParameter name="lightControl" value="13 0 0 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="LT.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="0.194 1.8 0.66" scale="0.27 0.29 0.3" nodeId="917">
+            <Shape shapeId="1" name="Cube.021" translation="0 0.588 3.2661" scale="0.385995 0.183928 0.230707" nodeId="918" materialIds="95" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="Cube.020" translation="0 0.71 3.13175" scale="0.336395 0.336395 0.336395" nodeId="919" materialIds="48"/>
+            <TransformGroup name="transform" translation="0 0.58 2.95" rotation="-90 0 0" scale="0.06 0.05 0.05" nodeId="920">
+                <Shape shapeId="3" name="Cylinder.012" rotation="-0 -180 -0" nodeId="921" materialIds="109" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="Cylinder.011" rotation="-0 -180 -0" nodeId="922" materialIds="98"/>
+                <Shape shapeId="5" name="cube" translation="0 -2 0" scale="13 1 8" visibility="false" nodeId="923" materialIds="130" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

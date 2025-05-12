@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="tjdj.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+    </Asset>
+    <Files>
+        <File fileId="3" filename="$data/shaders/glowShader.xml"/>
+        <File fileId="1" filename="textures/FlamesOpacity.png"/>
+    </Files>
+    <Materials>
+        <Material name="Material.004" materialId="40" specularColor="0.498039 1 0" alphaBlending="true" customShaderId="3">
+            <Texture fileId="1"/>
+            <CustomParameter name="lightControl" value="20 0 0 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="tjdj.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="2.06952 2.63754 2.08769" scale="0.1 0.1 0.1" nodeId="47">
+            <TransformGroup name="transform" translation="0 0 -17.6174" scale="0.2 0.2 0.2" nodeId="46">
+                <Shape shapeId="1" name="Flame" rotation="90 -0 0" scale="2853.6 2853.6 2853.6" nodeId="44" materialIds="40,40"/>
+                <Shape shapeId="2" name="Flame.001" translation="-107.824 -39.8405 54.6616" rotation="90 40.5123 0" scale="2853.6 2853.6 2853.6" nodeId="45" materialIds="40,40"/>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

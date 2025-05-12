@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="SCAFIONX.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files/>
+    <Materials>
+        <Material name="Material.035" materialId="136" diffuseColor="0.00784314 0.156863 0.00784314 1"/>
+    </Materials>
+    <Shapes externalShapesFile="f.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="New Project (1)" translation="-0.0652863 -3.35755 1.0374" rotation="89 -0 0" scale="1.1 1 1.1" nodeId="1143" materialIds="136"/>
+    </Scene>
+</i3D>

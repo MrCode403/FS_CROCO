@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="SCAFIONX.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="8" filename="texturas/photo_2024-12-24_19-43-28.jpg"/>
+        <File fileId="2" filename="glowShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="Material 1" materialId="78" diffuseColor="0 0.6 0 1" customShaderId="2">
+            <CustomParameter name="lightControl" value="10 0 0 0"/>
+        </Material>
+        <Material name="Material.060" materialId="118" diffuseColor="0.376471 0.376471 0.376471 1" specularColor="0.494118 1 0" shadingRate="4x4"/>
+        <Material name="Material.076" materialId="120" diffuseColor="0.894118 0.894118 0.894118 1" specularColor="0.494118 1 0" customShaderId="2">
+            <CustomParameter name="lightControl" value="1 0 0 0"/>
+        </Material>
+        <Material name="UnnamedMaterial" materialId="136" specularColor="1 1 1" customShaderId="2">
+            <Texture fileId="8"/>
+            <CustomParameter name="lightControl" value="1 0 0 0"/>
+        </Material>
+        <Material name="UnnamedMaterial" materialId="132" diffuseColor="0 0 0 1"/>
+        <Material name="UnnamedMaterial" materialId="133" diffuseColor="0.894118 0.894118 0.894118 1" customShaderId="2" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="10 0 0 0"/>
+            <CustomParameter name="colorScale" value="1 1 1 0"/>
+            <CustomParameter name="blinkOffset" value="1 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="7 0 0 0"/>
+        </Material>
+        <Material name="UnnamedMaterial" materialId="134" diffuseColor="1 1 1 1"/>
+    </Materials>
+    <Shapes externalShapesFile="klf.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" nodeId="1430">
+            <TransformGroup name="transform" translation="0.533375 3.00819 -0.31642" rotation="-86.2651 65.9216 4.08981" scale="0.309 0.309 0.309" nodeId="1042">
+                <Shape shapeId="1" name="Text 9" rotation="90 -0 0" nodeId="1043" materialIds="78"/>
+                <Shape shapeId="2" name="Text 8 1" rotation="90 -0 0" nodeId="1044" materialIds="78"/>
+                <Shape shapeId="3" name="Text 8" rotation="90 -0 0" nodeId="1045" materialIds="134"/>
+                <Shape shapeId="4" name="Text 7" rotation="90 -0 0" nodeId="1046" materialIds="78"/>
+                <Shape shapeId="5" name="Text 6 1" rotation="90 -0 0" nodeId="1047" materialIds="78"/>
+                <Shape shapeId="6" name="Text 6" rotation="90 -0 0" nodeId="1048" materialIds="134"/>
+                <Shape shapeId="7" name="Text 5 1" rotation="90 -0 0" nodeId="1049" materialIds="78"/>
+                <Shape shapeId="8" name="Text 5" rotation="90 -0 0" nodeId="1050" materialIds="134"/>
+                <Shape shapeId="9" name="Text 4 1" rotation="90 -0 0" nodeId="1051" materialIds="134"/>
+                <Shape shapeId="9" name="Text 4" rotation="90 -0 0" nodeId="1052" materialIds="134"/>
+                <Shape shapeId="10" name="Text 3 1" rotation="90 -0 0" nodeId="1053" materialIds="134"/>
+                <Shape shapeId="11" name="Text 3" rotation="90 -0 0" nodeId="1054" materialIds="134"/>
+                <Shape shapeId="12" name="Text 2 1" rotation="90 -0 0" nodeId="1055" materialIds="134"/>
+                <Shape shapeId="13" name="Text 2" rotation="90 -0 0" nodeId="1056" materialIds="134"/>
+                <Shape shapeId="14" name="Text 1 1" rotation="90 -0 0" nodeId="1057" materialIds="78"/>
+                <Shape shapeId="15" name="Text 1" rotation="90 -0 0" nodeId="1058" materialIds="134"/>
+                <Shape shapeId="16" name="Text" rotation="90 -0 0" nodeId="1059" materialIds="78"/>
+                <Shape shapeId="17" name="Cube" rotation="90 -0 0" nodeId="1060" materialIds="134"/>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-0.26145 3.75642 -1.53949" rotation="20.3514 -0 -90" scale="1 0.9 0.9" nodeId="1066">
+                <Shape shapeId="18" name="Curve.020" rotation="90 -0 0" nodeId="1067" materialIds="120"/>
+                <Shape shapeId="19" name="Curve.022" translation="0 1.45402 1.27114e-07" rotation="90 -0 0" nodeId="1068" materialIds="118"/>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-0.762423 3.0303 -0.83072" rotation="-86.2651 -65.922 -4.09" scale="0.309 0.309 0.309" nodeId="1069">
+                <Shape shapeId="1" name="Text 9" rotation="90 -0 0" nodeId="1070" materialIds="78"/>
+                <Shape shapeId="2" name="Text 8 1" rotation="90 -0 0" nodeId="1071" materialIds="78"/>
+                <Shape shapeId="3" name="Text 8" rotation="90 -0 0" nodeId="1072" materialIds="134"/>
+                <Shape shapeId="4" name="Text 7" rotation="90 -0 0" nodeId="1073" materialIds="78"/>
+                <Shape shapeId="5" name="Text 6 1" rotation="90 -0 0" nodeId="1074" materialIds="78"/>
+                <Shape shapeId="6" name="Text 6" rotation="90 -0 0" nodeId="1075" materialIds="134"/>
+                <Shape shapeId="7" name="Text 5 1" rotation="90 -0 0" nodeId="1076" materialIds="78"/>
+                <Shape shapeId="8" name="Text 5" rotation="90 -0 0" nodeId="1077" materialIds="134"/>
+                <Shape shapeId="9" name="Text 4 1" rotation="90 -0 0" nodeId="1078" materialIds="134"/>
+                <Shape shapeId="9" name="Text 4" rotation="90 -0 0" nodeId="1079" materialIds="134"/>
+                <Shape shapeId="10" name="Text 3 1" rotation="90 -0 0" nodeId="1080" materialIds="134"/>
+                <Shape shapeId="11" name="Text 3" rotation="90 -0 0" nodeId="1081" materialIds="134"/>
+                <Shape shapeId="12" name="Text 2 1" rotation="90 -0 0" nodeId="1082" materialIds="134"/>
+                <Shape shapeId="13" name="Text 2" rotation="90 -0 0" nodeId="1083" materialIds="134"/>
+                <Shape shapeId="14" name="Text 1 1" rotation="90 -0 0" nodeId="1084" materialIds="78"/>
+                <Shape shapeId="15" name="Text 1" rotation="90 -0 0" nodeId="1085" materialIds="134"/>
+                <Shape shapeId="16" name="Text" rotation="90 -0 0" nodeId="1086" materialIds="78"/>
+                <Shape shapeId="17" name="Cube" rotation="90 -0 0" nodeId="1087" materialIds="134"/>
+            </TransformGroup>
+            <Shape shapeId="20" name="cube" translation="-0.138378 2.99466 -0.526841" rotation="90 0 0" scale="0.01 0.24437 0.01" nodeId="1088" materialIds="133" distanceBlending="false"/>
+            <Shape shapeId="20" name="cube" translation="-0.0716138 2.99466 -0.566568" rotation="90 0 0" scale="0.01 0.24437 0.01" nodeId="1089" materialIds="133" distanceBlending="false"/>
+            <Shape shapeId="20" name="cube" translation="-0.00302802 2.99466 -0.598668" rotation="90 0 0" scale="0.01 0.24437 0.01" nodeId="1090" materialIds="133" distanceBlending="false"/>
+            <Shape shapeId="20" name="cube" translation="0.0611881 2.99466 -0.650458" rotation="90 0 0" scale="0.01 0.24437 0.01" nodeId="1091" materialIds="133" distanceBlending="false"/>
+            <Shape shapeId="21" name="Cube.001" translation="0 1.69989 -0.981262" rotation="90.609 -0 0" nodeId="1093" materialIds="132"/>
+            <TransformGroup name="transform" translation="0 -0.379455 -0.571172" rotation="4.43492 -0 0" scale="0.82 1 0.82" nodeId="1061">
+                <Shape shapeId="20" name="cube" translation="0 3.351 -0.891755" scale="0.527517 0.02 0.445301" nodeId="1062" materialIds="136" distanceBlending="false"/>
+                <TransformGroup name="transform" translation="-1.62209 4.08507 -1.49274" rotation="20.3514 -0 -90" nodeId="1063">
+                    <Shape shapeId="18" name="Curve.020" rotation="90 -0 0" nodeId="1064" materialIds="120"/>
+                    <Shape shapeId="19" name="Curve.022" translation="0 1.45402 1.27114e-07" rotation="90 -0 0" nodeId="1065" materialIds="118"/>
+                </TransformGroup>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+    <default>
+        <physics radius="0.94" width="2" mass="0.189" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="wheels/Rodas.i3d" nodeLeft="0|2|0|0" nodeRight="0|2|0|1" maxDeformation="0.065" isCareWheel="false" tireTrackAtlasIndex="5" />
+    </default>
+</wheel>

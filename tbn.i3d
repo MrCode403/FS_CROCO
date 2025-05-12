@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="Mahindra.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="3" filename="vehicleShader.xml"/>
+        <File fileId="2" filename="texturas/1.dds"/>
+    </Files>
+    <Materials>
+        <Material name="Material.001" materialId="68" diffuseColor="0.0431373 0.0431373 0.0431373 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="tbn.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="0 0.859057 0.190182" scale="1 0.54 0.79" nodeId="995">
+            <Shape shapeId="1" name="cube" translation="0 1.80488 0.305828" scale="0.56336 0.0153491 1" nodeId="996" materialIds="68" distanceBlending="false"/>
+            <Shape shapeId="1" name="cube" translation="0.275094 1.65294 0.305828" rotation="0 -0 90" scale="0.306 0.0153491 1" nodeId="997" materialIds="68" distanceBlending="false"/>
+            <Shape shapeId="1" name="cube" translation="-0.273231 1.65733 0.305828" rotation="0 -0 90" scale="0.306421 0.0153491 1" nodeId="998" materialIds="68" distanceBlending="false"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

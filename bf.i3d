@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="SCAFIONX.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="3" filename="vehicleShader.xml"/>
+        <File fileId="2" filename="SCAFX_MODEL/1.dds"/>
+        <File fileId="8" filename="SCAFX_MODEL/SCAFX_MODEL/1.dds"/>
+    </Files>
+    <Materials>
+        <Material name="i3d_default_material" materialId="32" diffuseColor="0 0.231373 0 1" customShaderId="3">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="i3d_default_material" materialId="34" diffuseColor="0.00784314 0.00784314 0.00784314 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="i3d_default_material" materialId="36" diffuseColor="0.00784314 0.156863 0.00784314 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="bf.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" nodeId="922">
+            <Shape shapeId="1" name="Cube.018" nodeId="923" materialIds="34" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="New Project (9)" nodeId="924" materialIds="32" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="3" name="SCAFIONX.044" nodeId="925" materialIds="36,36" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="New Project (9)" nodeId="926" materialIds="32" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

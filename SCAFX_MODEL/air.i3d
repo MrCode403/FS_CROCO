@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="1104" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="9" filename="SCAFX_6049/SCAFX_TIGER/textures/Texture/S_Akumulator.dds"/>
+        <File fileId="8" filename="SCAFX_6049/SCAFX_TIGER/textures/Texture/default_normal.dds"/>
+        <File fileId="10" filename="SCAFX_6049/SCAFX_TIGER/textures/Texture/default_specular.dds"/>
+        <File fileId="2" filename="SCAFX_6049/SCAFX_TIGER/turbo/fiting/texturas/1.dds"/>
+    </Files>
+    <Materials>
+        <Material name="default" materialId="42" customShaderId="3">
+            <Texture fileId="9"/>
+            <Glossmap fileId="10"/>
+            <CustomParameter name="RDT" value="1 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.005" materialId="85" diffuseColor="1 1 1 1" customShaderId="3" customShaderVariation="colorMask">
+            <Normalmap fileId="8"/>
+            <Glossmap fileId="9"/>
+            <CustomParameter name="RDT" value="1 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="0.018 0.018 0.018 1"/>
+            <CustomParameter name="colorMat1" value="1 1 1 8"/>
+            <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+        </Material>
+        <Material name="Material.270" materialId="145" diffuseColor="0.0666667 0.0784314 0.0784314 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="air.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="0.041 0.055 -0.166" scale="0.8 0.8 0.8" nodeId="1045">
+            <TransformGroup name="transform" translation="-0.088 0.166 2.6" rotation="0 180 0" scale="0.01 0.01 0.01" nodeId="1046">
+                <TransformGroup name="transform" translation="7 148 0" nodeId="1047">
+                    <Shape shapeId="1" name="New Proje (3)" translation="-7 -148 0" rotation="90 0 0" nodeId="1048" materialIds="145"/>
+                    <TransformGroup name="transform" translation="0 -11 147" nodeId="1049"/>
+                </TransformGroup>
+                <Shape shapeId="2" name="New Proje (4)" rotation="90 -0 0" nodeId="1050" materialIds="145"/>
+            </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="Akumulator" translation="0 0.984 1" rotation="-1.00179e-05 0 0" scale="1 1.06 0.7" nodeId="1051">
+            <Shape shapeId="3" name="Akumulator" translation="0 -5.56601e-08 0" rotation="90 -0 0" clipDistance="150" nodeId="1052" materialIds="85" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="Plane" translation="-8.40869e-09 0.0959553 0.116907" rotation="90 0 -90" scale="0.0577112 0.05 0.177" clipDistance="30" nodeId="1053" materialIds="42" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="Plane" translation="8.33646e-08 0.213265 -0.0213497" rotation="90 -90 -90" scale="0.0577112 0.05 0.177" clipDistance="30" nodeId="1054" materialIds="42" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="Plane" translation="-1.78376e-08 0.0959553 -0.098801" rotation="-90 -0 -90" scale="0.0577112 0.05 0.177" clipDistance="30" nodeId="1055" materialIds="42" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="Mahindra.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="15" filename="SCAFIONX_ARJUN/SCAFX_MODEL/SCAFIONX/material/rad2.dds"/>
+        <File fileId="2" filename="SCAFIONX_ARJUN/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/1.dds"/>
+        <File fileId="8" filename="SCAFIONX_ARJUN/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFX_TEXTURES/1.dds"/>
+        <File fileId="7" filename="SCAFIONX_ARJUN/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFX_TEXTURES/s-l1600 (1).dds"/>
+        <File fileId="3" filename="SCAFIONX_ARJUN/SCAFX_MODEL/vehicleShader.xml"/>
+        <File fileId="12" filename="SCAFIONX_ARJUN/SCAFX_MODEL/vierkant/SCAFIONX_855/SCAFIONX_SWARAJ/PANNU_SWARAJ/jd/universal/5620/Textures/rost.dds"/>
+        <File fileId="9" filename="SCAFIONX_ARJUN/SCAFX_MODEL/vierkant/SCAFIONX_855/SCAFIONX_SWARAJ/PANNU_SWARAJ/jd/universal/5620/arjun/arjun/Tex/trololo/Textures/patrauke.dds"/>
+    </Files>
+    <Materials>
+        <Material name="i3d_default_material" materialId="39" diffuseColor="0.294118 0.294118 0.294118 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="M_0102_RoyalBlue" materialId="64">
+            <Texture fileId="9"/>
+        </Material>
+        <Material name="Material #25" materialId="66" specularColor="0.6 1 0.6">
+            <Texture fileId="15"/>
+        </Material>
+        <Material name="Material #25" materialId="67">
+            <Texture fileId="12"/>
+        </Material>
+        <Material name="Material #25" materialId="68" diffuseColor="0.0392157 0.0392157 0.0431373 1" specularColor="1 1 1"/>
+        <Material name="Material.006" materialId="80" diffuseColor="0.2 0.2 0.2 1" specularColor="1 1 0.6"/>
+        <Material name="Material.100" materialId="112" diffuseColor="1 1 1 1" specularColor="1 1 1"/>
+        <Material name="UnnamedMaterial" materialId="129" customShaderId="3" shadingRate="2x2">
+            <Texture fileId="7"/>
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="bc.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="0 -0.193191 -0.545946" scale="0.8 1 1" nodeId="1006">
+            <TransformGroup name="transform" translation="0 -0.0266249 0.575532" scale="0.008 0.01 0.01" nodeId="1007">
+                <Shape shapeId="1" name="Cube.001" translation="0 143.276 73.3955" scale="27.9334 15.3327 4.13906" nodeId="1008" materialIds="39">
+                    <Shape shapeId="2" name="cube" scale="2 2 1.4" nodeId="1009" materialIds="129" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                </Shape>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="0.0831261 -0.128528 -0.134619" nodeId="1010">
+                <Shape shapeId="3" name="Mesh1_Model" translation="-0.01 1.74 1.233" rotation="0 0 90" scale="8 5 8" nodeId="1011" materialIds="64,64" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="Mesh1_Model" translation="-0.245 1.742 1.233" rotation="0 0 90" scale="8 8 8" nodeId="1012" materialIds="64,64" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="Dvi" translation="-0.2599 1.8699 1.1" rotation="90 0 -75" scale="0.9 0.9 0.9" nodeId="1013" materialIds="68" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="straight_L" translation="-0.334 1.882 0.83" rotation="92 0 -1" scale="0.3 0.2 0.3" clipDistance="300" nodeId="1014">
+                    <Shape shapeId="5" name="straight_left" translation="0.252 0.756 0.001" visibility="false" clipDistance="300" nodeId="1015" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="angled_left" translation="0.252 1.02 -0" scale="1.45 1.17 1.45" clipDistance="300" nodeId="1016" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="angled_left" translation="1.86367 0.899667 -0.161356" scale="1.45 0.56 1.45" clipDistance="300" nodeId="1017" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="angled_left" translation="0.899 0.31 -0.226" rotation="0 0 90" scale="2 0.88 1.2" clipDistance="300" nodeId="1018" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="angled_left" translation="1.65 -0.83 0.23" rotation="90 0 0" scale="1.02 0.3 1.7" clipDistance="300" nodeId="1019" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="angled_left" translation="0.110519 3.12179 0.374098" rotation="90 0.168416 -0.0548898" scale="1 0.7 1.45" clipDistance="300" nodeId="1020" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="angled_left" translation="1.56283 3.12046 0.348763" rotation="90 0.168416 -0.0548898" scale="1 0.7 1.45" clipDistance="300" nodeId="1021" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="angled_left" translation="1.17619 0.309747 -0.230835" rotation="0 0 90" scale="2 0.88 1.2" clipDistance="300" nodeId="1022" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="6" name="angled_left" translation="0.357182 -0.2711 0.818184" rotation="90 0 90" scale="2 0.6 1.2" clipDistance="300" nodeId="1023" materialIds="112" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="-0.32 -0.63 0" rotation="0 0 10" scale="1.45 1.45 1.15" nodeId="1024">
+                    <Shape shapeId="7" name="turbina.002" translation="1.398 0.361 0.135" rotation="0 0 33" scale="1 1 0.8" nodeId="1025" materialIds="67" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                    <Shape shapeId="8" name="turbina.001" translation="0.006 0.025 1.575" rotation="0 180 -6" scale="1 1 0.999" nodeId="1026" materialIds="80" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="-0.035 0 0" scale="0.87 1 1" nodeId="1027">
+                    <Shape shapeId="4" name="Dvi" translation="0.177 1.9088 1.223" rotation="0 0 -90" scale="0.87 0.9 0.9" nodeId="1028" materialIds="68" castsShadows="true" receiveShadows="true"/>
+                    <Shape shapeId="4" name="Dvi" translation="0.298 1.91766 1.00942" rotation="-90 -0 -98" scale="0.8 0.9 0.8" nodeId="1029" materialIds="68" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <Shape shapeId="3" name="Mesh1_Model" translation="-0.33 1.818 0.9033" rotation="0 0 90" scale="6 8 7" nodeId="1030" materialIds="64,64" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="Dvi" translation="-0.260194 1.8186 0.698" rotation="90 180 -205" scale="0.77 0.63 0.71" nodeId="1031" materialIds="66" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="Dvi" translation="-0.306958 1.89264 1.32821" rotation="90 -0 -180" scale="0.9 0.9 0.6" nodeId="1032" materialIds="68" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="Dvi" translation="-0.306958 1.88613 1.33855" rotation="-90 -0 91.0075" scale="0.9 0.9 0.6" nodeId="1033" materialIds="68" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="Dvi" translation="0.13524 1.89264 1.32821" rotation="90 -0 -180" scale="0.9 0.9 0.6" nodeId="1034" materialIds="68" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="Dvi" translation="0.138871 1.89793 1.32632" rotation="-90 -0 -91.007" scale="0.9 0.9 0.6" nodeId="1035" materialIds="68" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="Mesh1_Model" translation="-0.163833 1.742 1.233" rotation="0 0 90" scale="8 8 8" nodeId="1036" materialIds="64,64" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

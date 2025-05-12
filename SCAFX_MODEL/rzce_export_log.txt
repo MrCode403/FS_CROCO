@@ -1,0 +1,66 @@
+i3dio.exporter:export_blend_to_i3d:INFO: Blender version is: 3.5.1
+i3dio.exporter:export_blend_to_i3d:INFO: I3D Exporter version is: 4.2.0
+i3dio.exporter:export_blend_to_i3d:INFO: Exported using 'element_tree'
+i3dio.exporter:export_blend_to_i3d:INFO: Exporting to C:\Users\hp\Documents\My Games\FarmingSimulator2022\mods\SCAFIONX_KARTAR\SCAFX_MODEL\rzce.i3d
+i3dio.exporter:_export_selected_objects:INFO: 'Selected Objects' export is selected'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder.004] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [Cylinder.004] Filling out basic attributes, {name='Cylinder.004', nodeId='1'}
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.004] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.004] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cylinder.004] Filling out basic attributes, {name='Cylinder.004', nodeId='1'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder.004] has no material assigned, assigning default material
+i3dio.i3d.I3D:add_material:DEBUG: [rzce] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [i3d_default_material] Filling out basic attributes, {name='i3d_default_material', nodeId='1'}
+i3dio.node_classes.node.Material:_resolve_without_nodes:DEBUG: [i3d_default_material] Does not use nodes
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder.004] assigned default material i3d_default_material
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder.004] Has material 'i3d_default_material'
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cylinder.004] Subset with index [0] based on material 'i3d_default_material'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.004] Processing subset: materialId="1" numTriangles="380" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.004] Has subset 'i3d_default_material' with '380' triangles and materialId="1" numTriangles="380" firstIndex="0" firstVertex="0" numIndices="1140" numVertices="704"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cylinder.004] Has '1' subsets, '380' triangles and '704' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [Cylinder.004] has shape ID '1'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.004] transforming to new transform-basis with <Matrix 4x4 (0.0103, 0.0000, 0.0000, 0.0000)
+            (0.0000, 0.0708, 0.0000, 1.0000)
+            (0.0000, 0.0000, 0.0103, 2.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.004] translation is <Vector (0.0000, 1.0000, 2.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.004] has translation: [0 1 2]
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.004] has scale: [0.0102544 0.0707745 0.0102544]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [Cylinder.004] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder.004] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder.004] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder.005] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [Cylinder.005] Filling out basic attributes, {name='Cylinder.005', nodeId='2'}
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.005] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cylinder.005] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cylinder.005] Filling out basic attributes, {name='Cylinder.005', nodeId='2'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cylinder.005] Has material 'Material.004'
+i3dio.i3d.I3D:add_material:DEBUG: [rzce] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [Material.004] Filling out basic attributes, {name='Material.004', nodeId='2'}
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [Material.004] Has no Normalmap
+i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [Material.004] Has no Emissivemap
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [Material.004] Has no Glossmap
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cylinder.005] Subset with index [0] based on material 'Material.004'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.005] Processing subset: materialId="2" numTriangles="636" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cylinder.005] Has subset 'Material.004' with '636' triangles and materialId="2" numTriangles="636" firstIndex="0" firstVertex="0" numIndices="1908" numVertices="432"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cylinder.005] Has '1' subsets, '636' triangles and '432' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [Cylinder.005] has shape ID '2'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.005] transforming to new transform-basis with <Matrix 4x4 (0.0137, 0.0000,  0.0000, 0.0000)
+            (0.0000, 0.0097, -0.0070, 1.2205)
+            (0.0000, 0.0058,  0.0118, 2.0794)
+            (0.0000, 0.0000,  0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.005] translation is <Vector (0.0000, 1.2205, 2.0794)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.005] has translation: [0 1.22049 2.07935]
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.005] has rotation(degrees): [30.8261 -0 0]
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cylinder.005] has scale: [0.0137138 0.0113224 0.0137138]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [Cylinder.005] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder.005] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cylinder.005] no more children to process in object

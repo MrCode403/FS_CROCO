@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="SCAFIONX.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="9" filename="vehicleShader.xml"/>
+        <File fileId="2" filename="DIRT/texturas/1.dds"/>
+        <File fileId="8" filename="SCAFX_TEXTURES/1.dds"/>
+        <File fileId="3" filename="vehicleShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="Material.001" materialId="76" diffuseColor="0.0431373 0.0431373 0.0431373 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.035" materialId="122" diffuseColor="0 0.231373 0 1" customShaderId="9">
+            <Glossmap fileId="8"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="gd.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <Shape shapeId="1" name="New Project (2)" translation="-0.134307 1.70747 -1.26371" rotation="90 0 0" scale="0.5 0.37 0.5" nodeId="1047" materialIds="76" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="New Project (1)" translation="0.137156 5.51722 5.59704" rotation="-1.50751e-06 -1.65881e-08 -0.630965" scale="1.7 3 2" nodeId="1048" materialIds="122"/>
+        </Shape>
+    </Scene>
+</i3D>

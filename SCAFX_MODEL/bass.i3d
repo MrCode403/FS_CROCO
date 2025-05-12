@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="1104" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="14" filename="$data/shaders/glowShader.xml"/>
+        <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="11" filename="SCAFX_MODEL/fibre/texturas/vidro_escuro.dds"/>
+        <File fileId="26" filename="SCAFX_MODEL/fibre/vierkant/SCAFIONX/texturas/exch.dds"/>
+        <File fileId="2" filename="SCAFX_MODEL/texturas/1.dds"/>
+    </Files>
+    <Materials>
+        <Material name="02matVis" materialId="7" diffuseColor="0.0392157 0.0392157 0.0392157 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.001" materialId="65" diffuseColor="0.0941177 0.0941177 0.0941177 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.003" materialId="72" diffuseColor="0.4 0.4 0.4 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.009" materialId="78" customShaderId="3">
+            <Texture fileId="26"/>
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.009" materialId="79" diffuseColor="0.00784314 0.00784314 0.00784314 1" specularColor="0.0941177 1 0.0941177"/>
+        <Material name="Material.010" materialId="81" diffuseColor="1 0 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.011" materialId="83" specularColor="0.886275 1 0.976471" customShaderId="14" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="28 0 0 0"/>
+            <CustomParameter name="colorScale" value="1 0 0 0"/>
+            <CustomParameter name="blinkOffset" value="0.9 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="2 0 0 0"/>
+        </Material>
+        <Material name="Material.011" materialId="84" specularColor="1 1 1" customShaderId="14" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="37 0 0 0"/>
+            <CustomParameter name="colorScale" value="0 0.4 1 0"/>
+            <CustomParameter name="blinkOffset" value="0.4 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="2 0 0 0"/>
+        </Material>
+        <Material name="Material.012" materialId="85" specularColor="0.976471 1 0.866667" customShaderId="14" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="37 0 0 0"/>
+            <CustomParameter name="colorScale" value="0 0.4 1 0"/>
+            <CustomParameter name="blinkOffset" value="0.4 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="2 0 0 0"/>
+        </Material>
+        <Material name="Material.012" materialId="86" specularColor="0.894118 1 0.894118" customShaderId="14" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="28 0 0 0"/>
+            <CustomParameter name="colorScale" value="1 0 0 0"/>
+            <CustomParameter name="blinkOffset" value="0.9 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="2 0 0 0"/>
+        </Material>
+        <Material name="Material.013" materialId="88" diffuseColor="0.2 0.054902 0.054902 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.014" materialId="91" diffuseColor="0.6 0.4 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.020" materialId="104" diffuseColor="0.0666667 0.0666667 0.0666667 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.049" materialId="121" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0.537255" customShaderId="14" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="100 0 0 0"/>
+            <CustomParameter name="colorScale" value="1 0 0 0"/>
+            <CustomParameter name="blinkOffset" value="0.4 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="9 0 0 0"/>
+        </Material>
+        <Material name="Material.050" materialId="122" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0.4" customShaderId="14" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="144 0 0 0"/>
+            <CustomParameter name="colorScale" value="0 0 1 0"/>
+            <CustomParameter name="blinkOffset" value="0.8 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="9 0 0 0"/>
+        </Material>
+        <Material name="Material.051" materialId="123" diffuseColor="0.227451 0.2 0.2 1" specularColor="0.6 1 0.603922"/>
+        <Material name="Material.052" materialId="125" diffuseColor="0.0941177 0.0941177 0.109804 1" specularColor="1 1 0.968628"/>
+        <Material name="Material.053" materialId="126" diffuseColor="1 1 0.976471 1" specularColor="1 1 0.976471"/>
+        <Material name="Material.054" materialId="127" alphaBlending="true">
+            <Texture fileId="11"/>
+        </Material>
+        <Material name="Material.055" materialId="129" diffuseColor="0.8 0.8 0.8 1" specularColor="1 1 0.2" customShaderId="14" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="55 0 0 0"/>
+            <CustomParameter name="colorScale" value="0 1 1 0"/>
+            <CustomParameter name="blinkOffset" value="0.6 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="11 0 0 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="bass.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="0 0 0.144" rotation="90 0 90" scale="0.3 0.66 0.4" nodeId="988">
+            <Shape shapeId="1" name="Scafx_amp" rotation="90 -0 0" nodeId="989" materialIds="65"/>
+            <Shape shapeId="2" name="Scafx_amp (1)" rotation="90 -0 0" nodeId="990" materialIds="79"/>
+            <Shape shapeId="3" name="Scafx_amp (4)" rotation="90 -0 0" nodeId="991" materialIds="123"/>
+            <Shape shapeId="4" name="Scafx_amp (7)" rotation="90 -0 0" nodeId="992" materialIds="127"/>
+            <Shape shapeId="5" name="Scafx_amp (8)" rotation="90 -0 0" nodeId="993" materialIds="129"/>
+            <Shape shapeId="6" name="Scafx_amp (3)" rotation="90 -0 0" nodeId="994" materialIds="122"/>
+            <Shape shapeId="7" name="Scafx_amp (2)" rotation="90 -0 0" nodeId="995" materialIds="121"/>
+            <Shape shapeId="8" name="Scafx_amp (6)" rotation="90 -0 0" nodeId="996" materialIds="126"/>
+            <Shape shapeId="9" name="Scafx_amp (5)" rotation="90 -0 0" nodeId="997" materialIds="125"/>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="0 -0.189 -0.023" scale="0.71 1 0.777" nodeId="998">
+            <TransformGroup name="transform" translation="0.3 1.1 1.165" rotation="0 180 0" scale="2.66 3 2.6" nodeId="999">
+                <Shape shapeId="10" name="novo_ (11)" rotation="90 -0 0" nodeId="1000" materialIds="88"/>
+                <Shape shapeId="11" name="novo_ (13)" rotation="90 -0 0" nodeId="1001" materialIds="104"/>
+                <Shape shapeId="12" name="novo_ (12)" rotation="90 -0 0" nodeId="1002" materialIds="91"/>
+                <Shape shapeId="10" name="novo_ (11)" translation="0 0 -0.0122" rotation="90 -0 0" scale="1.01 1.01 1.002" nodeId="1003" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-0.3 1.1 1.165" rotation="0 180 0" scale="2.66 3 2.6" nodeId="1004">
+                <Shape shapeId="10" name="novo_ (11)" rotation="90 -0 0" nodeId="1005" materialIds="88"/>
+                <Shape shapeId="11" name="novo_ (13)" rotation="90 -0 0" nodeId="1006" materialIds="104"/>
+                <Shape shapeId="12" name="novo_ (12)" rotation="90 -0 0" nodeId="1007" materialIds="91"/>
+                <Shape shapeId="10" name="novo_ (11)" translation="0 0 -0.0122" rotation="90 -0 0" scale="1.01 1.01 1.002" nodeId="1008" materialIds="7"/>
+            </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="0 1.3 0.833" rotation="0 180 0" scale="2.27 2 2" nodeId="1009">
+            <TransformGroup name="transform" translation="0.12 0.7 -0.14" rotation="37 0 11" scale="0.8 1 1" nodeId="1010">
+                <Shape shapeId="13" name="novo_ (8)" rotation="90 -0 0" nodeId="1011" materialIds="81"/>
+                <Shape shapeId="14" name="novo_ (6)" rotation="90 -0 0" nodeId="1012" materialIds="72"/>
+                <Shape shapeId="15" name="novo_ (7)" rotation="90 -0 0" nodeId="1013" materialIds="78"/>
+                <TransformGroup name="transform" scale="1.05 1 1" nodeId="1014">
+                    <Shape shapeId="16" name="novo_ (9)" translation="0 0.009 -0.005" rotation="90 -0 0" nodeId="1015" materialIds="84"/>
+                    <Shape shapeId="17" name="novo_ (10)" rotation="90 -0 0" nodeId="1016" materialIds="86"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="transform" translation="-0.12 0.7 -0.14" rotation="37 0 -11" scale="0.8 1 1" nodeId="1017">
+                <Shape shapeId="13" name="novo_ (8)" rotation="90 -0 0" nodeId="1018" materialIds="81"/>
+                <Shape shapeId="14" name="novo_ (6)" rotation="90 -0 0" nodeId="1019" materialIds="72"/>
+                <Shape shapeId="15" name="novo_ (7)" rotation="90 -0 0" nodeId="1020" materialIds="78"/>
+                <TransformGroup name="transform" scale="1.05 1 1" nodeId="1021">
+                    <Shape shapeId="16" name="novo_ (9)" translation="0 0.009 -0.005" rotation="90 -0 0" nodeId="1022" materialIds="83"/>
+                    <Shape shapeId="17" name="novo_ (10)" rotation="90 -0 0" nodeId="1023" materialIds="85"/>
+                </TransformGroup>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

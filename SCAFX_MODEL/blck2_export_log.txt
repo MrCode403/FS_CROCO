@@ -1,0 +1,65 @@
+i3dio.exporter:export_blend_to_i3d:INFO: Blender version is: 3.5.1
+i3dio.exporter:export_blend_to_i3d:INFO: I3D Exporter version is: 4.2.0
+i3dio.exporter:export_blend_to_i3d:INFO: Exported using 'element_tree'
+i3dio.exporter:export_blend_to_i3d:INFO: Exporting to C:\Users\hp\Documents\My Games\FarmingSimulator2022\mods\SCAFIONX_KARTAR\SCAFX_MODEL\blck2.i3d
+i3dio.exporter:_export_selected_objects:INFO: 'Selected Objects' export is selected'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube.002] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [Cube.002] Filling out basic attributes, {name='Cube.002', nodeId='1'}
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.019] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.019] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cube.019] Filling out basic attributes, {name='Cube.019', nodeId='1'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cube.019] Has material 'Material.013'
+i3dio.i3d.I3D:add_material:DEBUG: [blck2] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [Material.013] Filling out basic attributes, {name='Material.013', nodeId='1'}
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [Material.013] Has no Normalmap
+i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [Material.013] Has no Emissivemap
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [Material.013] Has no Glossmap
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cube.019] Subset with index [0] based on material 'Material.013'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.019] Processing subset: materialId="1" numTriangles="1756" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.019] Has subset 'Material.013' with '1756' triangles and materialId="1" numTriangles="1756" firstIndex="0" firstVertex="0" numIndices="5268" numVertices="1203"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cube.019] Has '1' subsets, '1756' triangles and '1203' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [Cube.002] has shape ID '1'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube.002] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000,  0.0000, 0.0000)
+            (0.0000, 0.0000, -1.0000, 0.0000)
+            (0.0000, 1.0000,  0.0000, 0.0000)
+            (0.0000, 0.0000,  0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube.002] translation is <Vector (0.0000, 0.0000, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube.002] translation is default
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube.002] has rotation(degrees): [90 -0 0]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [Cube.002] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube.002] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube.002] no more children to process in object
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube.011] is of type 'MESH'
+i3dio.node_classes.node.ShapeNode:_create_xml_element:DEBUG: [Cube.011] Filling out basic attributes, {name='Cube.011', nodeId='2'}
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.017] is exported with modifiers applied
+i3dio.node_classes.shape.EvaluatedMesh:generate_evaluated_mesh:DEBUG: [Cube.017] applying unit scaling
+i3dio.node_classes.node.IndexedTriangleSet:_create_xml_element:DEBUG: [Cube.017] Filling out basic attributes, {name='Cube.017', nodeId='2'}
+i3dio.node_classes.node.IndexedTriangleSet:populate_from_evaluated_mesh:INFO: [Cube.017] Has material 'Material.012'
+i3dio.i3d.I3D:add_material:DEBUG: [blck2] New Material
+i3dio.node_classes.node.Material:_create_xml_element:DEBUG: [Material.012] Filling out basic attributes, {name='Material.012', nodeId='2'}
+i3dio.node_classes.node.Material:_normal_from_nodes:DEBUG: [Material.012] Has no Normalmap
+i3dio.node_classes.node.Material:_emissive_from_nodes:DEBUG: [Material.012] Has no Emissivemap
+i3dio.node_classes.node.Material:_resolve_with_nodes:DEBUG: [Material.012] Has no Glossmap
+i3dio.node_classes.node.IndexedTriangleSet:process_subsets:DEBUG: [Cube.017] Subset with index [0] based on material 'Material.012'
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.017] Processing subset: materialId="2" numTriangles="1756" firstIndex="0" firstVertex="0" numIndices="0" numVertices="0"
+i3dio.node_classes.node.IndexedTriangleSet:process_subset:DEBUG: [Cube.017] Has subset 'Material.012' with '1756' triangles and materialId="2" numTriangles="1756" firstIndex="0" firstVertex="0" numIndices="5268" numVertices="1203"
+i3dio.node_classes.node.IndexedTriangleSet:populate_xml_element:DEBUG: [Cube.017] Has '1' subsets, '1756' triangles and '1203' vertices
+i3dio.node_classes.node.ShapeNode:populate_xml_element:DEBUG: [Cube.011] has shape ID '2'
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeObjectAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.xml_i3d:write_i3d_properties:INFO: Writing non-default properties from propertygroup: 'I3DNodeShapeAttributes'
+i3dio.xml_i3d:write_i3d_properties:INFO: Wrote '0' properties
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube.011] transforming to new transform-basis with <Matrix 4x4 (1.0000, 0.0000,  0.0000, 0.0000)
+            (0.0000, 0.0000, -1.0000, 0.0000)
+            (0.0000, 1.0000,  0.0000, 0.0000)
+            (0.0000, 0.0000,  0.0000, 1.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube.011] translation is <Vector (0.0000, 0.0000, 0.0000)>
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube.011] translation is default
+i3dio.node_classes.node.ShapeNode:_add_transform_to_xml_element:DEBUG: [Cube.011] has rotation(degrees): [90 -0 0]
+i3dio.node_classes.node.ShapeNode:__init__:DEBUG: [Cube.011] Initialized as a 'ShapeNode'
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube.011] processing objects children
+i3dio.exporter:_add_object_to_i3d:DEBUG: [Cube.011] no more children to process in object

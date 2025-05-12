@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="1104" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="14" filename="$data/shaders/alphabetShader.xml"/>
+        <File fileId="11" filename="$data/shaders/glowShader.xml"/>
+        <File fileId="3" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="2" filename="SCAFX_6049/texturas/1.dds"/>
+    </Files>
+    <Materials>
+        <Material name="Material.030" materialId="117" diffuseColor="0.8 0 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.030" materialId="118" diffuseColor="1 0.0941177 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.030" materialId="119" diffuseColor="0.8 0.8 0.8 1" specularColor="1 1 1" customShaderId="11" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="30 0 0 0"/>
+            <CustomParameter name="colorScale" value="0.7 0.1 0 0"/>
+            <CustomParameter name="blinkOffset" value="1 0 1 0"/>
+            <CustomParameter name="blinkSpeed" value="7 0 0 0"/>
+        </Material>
+        <Material name="Material.031" materialId="120" diffuseColor="0.2 0.2 0.2 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.031" materialId="121" diffuseColor="0.8 0.8 0.8 1" specularColor="1 1 0.894118" customShaderId="14">
+            <CustomParameter name="index" value="0 0 0 0"/>
+            <CustomParameter name="spacing" value="0 0 0 0"/>
+            <CustomParameter name="lightControl" value="20 0 0 0"/>
+            <CustomParameter name="colorScale" value="1 0 0 1"/>
+            <CustomParameter name="alphaErosion" value="0 0 0 0"/>
+        </Material>
+        <Material name="Material.032" materialId="123" diffuseColor="0.027451 0.027451 0.0156863 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="INDI.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="0 1.55 -1.355" rotation="0 -90 0" scale="1 1 1.02" nodeId="828">
+            <Shape shapeId="1" name="f2 (3)" translation="0 0 -0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="829" materialIds="123" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="f2 (4)" nodeId="830" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="f2 (5)" nodeId="831" materialIds="118" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="f2 (5)" translation="0.001 0 0" nodeId="832" materialIds="119" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="f2" translation="0 0 0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="833" materialIds="123" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="5" name="f2 (1)" nodeId="834" materialIds="120" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="f2 (2)" nodeId="835" materialIds="118" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="f2 (2)" translation="0.001 0 0" nodeId="836" materialIds="119" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="0 1.55 -1.677" rotation="0 90 0" scale="1 1 1.02" nodeId="837">
+            <Shape shapeId="1" name="f2 (3)" translation="0 0 -0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="838" materialIds="123" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="3" name="f2 (5)" nodeId="839" materialIds="118" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="f2 (4)" nodeId="840" materialIds="117" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="f2 (5)" translation="0.001 0 0" nodeId="841" materialIds="119" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="f2 (4)" translation="0.001 0 0" nodeId="842" materialIds="121" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="f2" translation="0 0 0.76" rotation="90 -0 0" scale="1 1.1 1" nodeId="843" materialIds="123" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="6" name="f2 (2)" nodeId="844" materialIds="118" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="5" name="f2 (1)" nodeId="845" materialIds="117" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="f2 (2)" translation="0.001 0 0" nodeId="846" materialIds="119" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="5" name="f2 (1)" translation="0.001 0 0" nodeId="847" materialIds="121" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+        </TransformGroup>
+    </Scene>
+</i3D>

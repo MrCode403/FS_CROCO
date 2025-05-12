@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="60">
+    <author>davindermaan</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>5210_happy</en>
+    </title>
+	
+<description>
+<br><![CDATA[Mahindra 86 110
+
+- Potência: 110 CV
+- Preço: 25000€
+- Velocidade: 43 KM/H
+- Opções de cor de Roda
+- Opções de cor Principal
+- Configurações de Roda
+- Configurações de Design
+- Portas animadas]]>
+</br>
+
+<en><![CDATA[Mahindra 86 110
+
+- Power: 110 HP
+- Price: 25000 $
+- Speed limit: 43 kph
+- Rim Color Options
+- Main color options
+- Wheel Settings
+- Design Settings
+- Animated doors]]>
+</en>
+<de><![CDATA[Mahindra 86 110
+
+- Leistung: 110 PS
+- Preis:25000 €
+- Geschwindigkeit: 43 km/h
+- Felgenfarbe konfigurierbar
+- Hauptfarbe konfigurierbar
+- Reifenoptionen
+- Designkonfigurationen
+- Animierte Türen]]>
+</de>
+</description>	
+
+    <l10n>	
+		<text name="defaultRice">
+			<en>Rice default</en>
+			<de>Reisreifen</de>
+			<br>Padrão arrozeiro</br>
+		</text>	
+		<text name="dual wheels">
+			<en>Dual wheels</en>
+			<de>Zwillingsreifen</de>
+			<br>Rodas duplas</br>
+		</text>
+		<text name="auxiliary wheel">
+			<en>Auxiliary wheel</en>
+			<de>Hilfsrad</de>
+			<br>Roda auxiliar</br>
+		</text>
+		<text name="auxiliary wheel 2">
+			<en>Auxiliary wheel 2</en>
+			<de>Hilfsrad 2</de>
+			<br>Roda auxiliar 2</br>
+		</text>
+		<text name="half cage">
+			<en>Half cage</en>
+			<de>Halber Käfig</de>
+			<br>Meia gaiola</br>
+		</text>	
+		<text name="cage wheel">
+			<en>Cage wheel</en>
+			<de>Käfigrad</de>
+			<br>Roda gaiola</br>
+		</text>	
+		<text name="conical wheels">
+			<en>Conical Wheels</en>
+			<de>Konische Räder</de>
+			<br>Rodas Conicas</br>
+		</text>	
+        <text name="Weight/Fenders">
+			<en>Weight/Fender</en>
+			<de>Gewicht/Schutzblech</de>
+			<br>Peso/Paralama</br>
+		</text>	
+        <text name="Weight+Fenders">
+			<en>Fender and Weight</en>
+			<de>Gewicht und Schutzblech</de>
+			<br>Peso e Paralama</br>
+		</text>			
+        <text name="Weight">
+			<en>Weight</en>
+			<de>Gewicht</de>
+			<br>Peso</br>
+		</text>
+        <text name="Fenders">
+			<en>Fender</en>
+			<de>Schutzblech</de>
+			<br>Paralama</br>
+		</text> 	
+        <text name="Attacher">
+			<en>Attacher</en>
+			<de>Anhängevorrichtung</de>
+			<br>Engate</br>
+		</text>	
+        <text name="Window">
+			<en>Window</en>
+			<de>Fenster</de>
+			<br>Vidro</br>
+		</text>	
+        <text name="Exhaust">
+			<en>Exhaust</en>
+			<de>Auspuff</de>
+			<br>Escape</br>
+		</text>					
+	</l10n>
+
+    <iconFilename>icon.dds</iconFilename>	
+	<multiplayer supported="true"/>
+	
+    <storeItems>
+        <storeItem xmlFilename="SCAFIONX.xml"/>
+    </storeItems>
+</modDesc>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="1104" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="12" filename="SCAFX_PARTS/SCAFX_MODEL/SCAFX_6049/texturas/Dirt1_specular.dds"/>
+        <File fileId="9" filename="SCAFX_PARTS/SCAFX_TEXTURES/1.dds"/>
+        <File fileId="2" filename="SCAFX_PARTS/texturas/1104Interior_normal.png"/>
+        <File fileId="3" filename="SCAFX_PARTS/texturas/1104Interior_specular.png"/>
+    </Files>
+    <Materials>
+        <Material name="lambert4" materialId="70" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+            <CustomParameter name="RDT" value="1 1 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="0.09 0.09 0.09 5"/>
+            <CustomParameter name="colorMat1" value="0 0.2 0.517 0"/>
+            <CustomParameter name="colorMat2" value="0.1 1 0.1 2"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+        </Material>
+        <Material name="Material.010" materialId="91" diffuseColor="0.00784314 0.00784314 0.00784314 1" customShaderId="4">
+            <Glossmap fileId="12"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.133" materialId="142" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="4">
+            <Glossmap fileId="9"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.134" materialId="143" diffuseColor="1 0.0941177 0 1" customShaderId="4">
+            <Glossmap fileId="9"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="GEARS.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="gearGroupLever" translation="-0.34 -0.93 0.066" clipDistance="300" nodeId="616">
+            <TransformGroup name="playerRightHandTarget" translation="0 0.44 0.088" rotation="56.4169 50.1634 62.9853" nodeId="617"/>
+            <TransformGroup name="gearGroupLeverJoint" nodeId="618"/>
+            <TransformGroup name="playerRightHandTarget" translation="-0.115065 0.574554 -0.0264484" rotation="60.2525 44.4266 68.1966" nodeId="619"/>
+            <Shape shapeId="1" name="Cambio1" translation="0.00346959 -0.00757778 0.000552654" rotation="-29.846 -0 0" visibility="false" clipDistance="300" nodeId="620" materialIds="70" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <TransformGroup name="joint3" translation="0.125166 0.0855268 -0.0446848" visibility="false" nodeId="621"/>
+            </Shape>
+            <Shape shapeId="2" name="New Project" translation="0 0.1 0" rotation="90 90 0" scale="0.3 0.3 0.37" nodeId="622" materialIds="142" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="3" name="New Project (1)" translation="0.18 0 0.45" scale="1.6 1.5 1.5" nodeId="623" materialIds="143" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="New Projectgr (1).001" translation="-0.012 0 0.15" scale="1.1 1.1 1.4" nodeId="624" materialIds="91" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+        </TransformGroup>
+        <TransformGroup name="gearGroupLever" translation="-0.3 -0.97 0.1" clipDistance="75" nodeId="625">
+            <TransformGroup name="gearGroupLeverJoint" nodeId="626"/>
+            <Shape shapeId="2" name="New Project" translation="0 0.1 0" rotation="90 180 0" scale="0.24 0.24 0.23" nodeId="627" materialIds="142" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="4" name="New Projectgr (1).001" translation="-0.012 0 0.15" scale="1.1 1.1 1.4" nodeId="628" materialIds="91" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="New Project (1)" translation="0.18 0 0.45" scale="1.6 1.5 1.5" nodeId="629" materialIds="143" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+        </TransformGroup>
+        <TransformGroup name="gearGroupLever" translation="0.34 -0.95 0.1" clipDistance="300" nodeId="630">
+            <TransformGroup name="playerRightHandTarget" translation="0 0.42 0.1" rotation="56.4169 50.1634 62.9853" nodeId="631"/>
+            <TransformGroup name="gearGroupLeverJoint" nodeId="632"/>
+            <TransformGroup name="playerRightHandTarget" translation="-0.115065 0.574554 -0.0264484" rotation="60.2525 44.4266 68.1966" nodeId="633"/>
+            <Shape shapeId="1" name="Cambio1" translation="0.00346959 -0.00757778 0.000552654" rotation="-29.846 -0 0" visibility="false" clipDistance="300" nodeId="634" materialIds="70" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <TransformGroup name="joint3" translation="0.125166 0.0855268 -0.0446848" visibility="false" nodeId="635"/>
+            </Shape>
+            <Shape shapeId="2" name="New Project" translation="0 0.1 0" rotation="90 90 0" scale="0.3 0.3 0.35" nodeId="636" materialIds="142" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="4" name="New Projectgr (1).001" translation="-0.012 0 0.15" scale="1.1 1.1 1.4" nodeId="637" materialIds="91" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="3" name="New Project (1)" translation="0.18 0 0.45" scale="1.6 1.5 1.5" nodeId="638" materialIds="143" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes>
+        <UserAttribute nodeId="618">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="621">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="626">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="632">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+        <UserAttribute nodeId="635">
+            <Attribute name="liw" type="boolean" value="false"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>

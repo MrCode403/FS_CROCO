@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="SCAFIONX.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="11" filename="wheels/vehicleShader.xml"/>
+        <File fileId="30" filename="wheels/wheels/SCAFIONX_TIGER/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/aaaa11/newwwww/FelgenSpec.dds"/>
+        <File fileId="31" filename="wheels/wheels/SCAFIONX_TIGER/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/aaaa11/newwwww/vehicleShader.xml"/>
+        <File fileId="34" filename="wheels/wheels/SCAFIONX_TIGER/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/hooo/hooo/vehicleShader.xml"/>
+        <File fileId="33" filename="wheels/wheels/SCAFIONX_TIGER/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/hooo/textury_8370R/MB2.dds"/>
+        <File fileId="27" filename="wheels/wheels/SCAFX_MODEL/SCAFX_MODEL/1.dds"/>
+        <File fileId="23" filename="wheels/wheels/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/DIRT/SCAFX_6049/turbo/SCAFX_3600/SCAFIONX_FARM/texturas/1.dds"/>
+        <File fileId="16" filename="wheels/wheels/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFIONX_ARJUN/prts/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/aaaa11/newwwww/FelgenSpec.dds"/>
+        <File fileId="9" filename="wheels/wheels/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFIONX_ARJUN/prts/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/aaaa11/newwwww/FirestoneTex.dds"/>
+        <File fileId="17" filename="wheels/wheels/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFIONX_ARJUN/prts/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/aaaa11/newwwww/vehicleShader.xml"/>
+        <File fileId="21" filename="wheels/wheels/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFIONX_ARJUN/prts/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/hooo/hooo/vehicleShader.xml"/>
+        <File fileId="20" filename="wheels/wheels/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/SCAFIONX_ARJUN/prts/scafionxnovo/SCAFIONX/scafionx_novo/PANNU_ARJUN/PANNU_ARJUN/PANNU_ARJUN/arjn/exhaust/855/ARJ/hooo/textury_8370R/MB2.dds"/>
+        <File fileId="2" filename="wheels/wheels/SCAFX_MODEL/SCAFX_MODEL/SCAFX_MODEL/texturas/1.dds"/>
+        <File fileId="10" filename="wheels/wheels/SCAFX_TEXTURES/1.dds"/>
+        <File fileId="25" filename="wheels/wheels/tf8181_normal.dds"/>
+        <File fileId="3" filename="wheels/wheels/vehicleShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="01 - Default" materialId="4" diffuseColor="0 0 0 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="chrome" materialId="17" diffuseColor="0.294118 0 0 1" customShaderId="3">
+            <Glossmap fileId="23"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="chrome" materialId="18" diffuseColor="0.768628 0 0.0392157 1" specularColor="1 1 0.694118"/>
+        <Material name="i3d_default_material" materialId="40" diffuseColor="1 0.776471 0 1" customShaderId="3">
+            <Glossmap fileId="27"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="lambert1" materialId="59" diffuseColor="0.6 0.6 0.6 1" emissiveColor="0 0 0 1" customShaderId="31">
+            <Glossmap fileId="30"/>
+        </Material>
+        <Material name="lambert1" materialId="60" diffuseColor="0.6 0.6 0.6 1" emissiveColor="0 0 0 1" customShaderId="17">
+            <Glossmap fileId="16"/>
+        </Material>
+        <Material name="lambert208" materialId="67" diffuseColor="0 0.2 0.494118 1" customShaderId="34">
+            <Glossmap fileId="33"/>
+        </Material>
+        <Material name="lambert208" materialId="68" diffuseColor="0 0.2 0.494118 1" customShaderId="21">
+            <Glossmap fileId="20"/>
+        </Material>
+        <Material name="Material.009" materialId="102" diffuseColor="0.2 0.203922 0.2 1" customShaderId="3">
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.009" materialId="103" diffuseColor="0.494118 0.494118 0.494118 1" specularColor="0.6 1 0.6"/>
+        <Material name="Material.018" materialId="120" diffuseColor="1 0.8 0 1" specularColor="1 1 1"/>
+        <Material name="tf8181_mat169" materialId="156" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="3" customShaderVariation="tirePressureDeformation">
+            <Normalmap fileId="25"/>
+            <Glossmap fileId="2"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+            <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+            <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+            <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+            <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+            <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+            <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+            <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+            <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+            <CustomParameter name="morphPosition" value="-0.45 -0.915 0.5 0.1"/>
+            <CustomParameter name="prevMorphPosition" value="-0.45 -0.915 0.5 0.1"/>
+        </Material>
+        <Material name="vorne:acmat_1" materialId="167" customShaderId="11" shadingRate="1x2">
+            <Texture fileId="9"/>
+            <Glossmap fileId="10"/>
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="vorne:acmat_1" materialId="168" diffuseColor="0.0156863 0.0156863 0.0156863 1" specularColor="0.294118 1 0.513726"/>
+    </Materials>
+    <Shapes externalShapesFile="fr.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="22.2069 0.0765383 0" scale="0.8 0.81 0.81" nodeId="1197">
+            <Shape shapeId="1" name="HUB" translation="0.2 0 0" rotation="-333 0 0" scale="118 80 80" clipDistance="300" nodeId="1198" materialIds="4" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="2" name="New Project" translation="0.03 0 0" rotation="90 0 90" scale="0.25 0.25 0.16" nodeId="1199" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="3" name="Hub" translation="1.3 0 0" scale="55 70 70" clipDistance="150" nodeId="1200" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="-2 0 0" scale="1 1.2 1.2" nodeId="1201">
+                <Shape shapeId="4" name="New Project (1)" translation="-2 9 0" rotation="90 0 -90" scale="55 55 70" nodeId="1202" materialIds="120"/>
+                <Shape shapeId="4" name="New Project (1)" translation="-2 -9 0" rotation="90 0 -90" scale="55 55 70" nodeId="1203" materialIds="120"/>
+                <Shape shapeId="4" name="New Project (1)" translation="-2 -4.5 8" rotation="90 0 -90" scale="55 55 70" nodeId="1204" materialIds="120"/>
+                <Shape shapeId="4" name="New Project (1)" translation="-2 -4.5 -8" rotation="90 0 -90" scale="55 55 70" nodeId="1205" materialIds="120"/>
+                <Shape shapeId="4" name="New Project (1)" translation="-2 4.5 -8" rotation="90 0 -90" scale="55 55 70" nodeId="1206" materialIds="120"/>
+                <Shape shapeId="4" name="New Project (1)" translation="-2 4.5 8" rotation="90 0 -90" scale="55 55 70" nodeId="1207" materialIds="120"/>
+            </TransformGroup>
+            <Shape shapeId="5" name="vorne" translation="1 0 0" scale="116 114 114" visibility="false" nodeId="1208" materialIds="167" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="felger" scale="1.2 0.85 0.85" visibility="false" nodeId="1209" materialIds="60" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                <Shape shapeId="5" name="vorne" scale="0.85 0.899 0.899" nodeId="1210" materialIds="167" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+                <TransformGroup name="Normali" rotation="0 180 0" scale="0.52 0.46 0.46" visibility="false" nodeId="1211">
+                    <Shape shapeId="7" name="Cylinder.001" rotation="0 -0 -90" nodeId="1212" materialIds="102" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <Shape shapeId="8" name="RL" rotation="0 180 0" scale="0.02 0.5 0.5" visibility="false" nodeId="1213" materialIds="68" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="9" name="reardually" translation="0.02 0 0" scale="0.1 0.95 0.95" visibility="false" clipDistance="300" nodeId="1214" materialIds="17" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="10" name="lod0" translation="-0.006 0 0" scale="1 1.01 1.01" nodeId="1215" materialIds="156" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="11" name="Cylinder" translation="22 0 0" rotation="0 0 -90" scale="27 50 27" nodeId="1216" materialIds="40" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="10" name="lod0" translation="0 -0.43 0" rotation="0 0 90" scale="2.1 4.1 4.1" visibility="false" nodeId="1217" materialIds="156" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="vorne" scale="104 108 108" nodeId="1218" materialIds="168" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="6" name="felger" scale="1.2 0.85 0.85" visibility="false" nodeId="1219" materialIds="59" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                <Shape shapeId="5" name="vorne" scale="0.85 0.899 0.899" nodeId="1220" materialIds="168" castsShadows="true" receiveShadows="true"/>
+                <TransformGroup name="Normali" rotation="0 180 0" scale="0.52 0.46 0.46" visibility="false" nodeId="1221">
+                    <Shape shapeId="7" name="Cylinder.001" rotation="0 -0 -90" nodeId="1222" materialIds="103" castsShadows="true" receiveShadows="true"/>
+                </TransformGroup>
+                <Shape shapeId="8" name="RL" rotation="0 180 0" scale="0.02 0.5 0.5" visibility="false" nodeId="1223" materialIds="67" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="9" name="reardually" translation="-0.07 0 0" scale="0.1 0.95 0.95" visibility="false" clipDistance="300" nodeId="1224" materialIds="18" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+        </TransformGroup>
+    </Scene>
+</i3D>

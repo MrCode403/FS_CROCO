@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="RACE.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+    </Asset>
+    <Files/>
+    <Materials>
+        <Material name="Material.038" materialId="115" diffuseColor="0 0.427451 0 1" specularColor="0.6 1 0.619608"/>
+        <Material name="Material.058" materialId="118" diffuseColor="1 0.0941177 0 1" specularColor="0.494118 1 0.4"/>
+    </Materials>
+    <Shapes externalShapesFile="RACE.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="-0.077 -240.725 240.99" rotation="0.0088 0 0" scale="0.7 1 1" nodeId="845">
+            <TransformGroup name="transform" translation="0 241 -241" scale="0.33 0.3 0.3" nodeId="846">
+                <Shape shapeId="1" name="New Project" scale="1 0.8 1" nodeId="847" materialIds="115">
+                    <Shape shapeId="2" name="New Project (1)" nodeId="848" materialIds="118"/>
+                </Shape>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+</i3D>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="SCAFIONX.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="vehicleShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="08Mat" materialId="11" diffuseColor="0.0156863 0.0156863 0.0156863 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.002" materialId="86" diffuseColor="0 0.227451 0 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.010" materialId="94" diffuseColor="0.00784314 0.00784314 0.00784314 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+        <Material name="Material.019" materialId="100" diffuseColor="0.8 0.8 0.8 1" customShaderId="2">
+            <CustomParameter name="RDT" value="0 0 0 0"/>
+            <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="nbg.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="transform" translation="0 0.41 -0.15" scale="0.79 0.8 0.8" nodeId="1030">
+            <TransformGroup name="transform" translation="0 -0.3 0" scale="0.96 1.03 1.05" nodeId="1031">
+                <Shape shapeId="1" name="fibre" translation="0 -0.86 0" scale="1.06 1.2 1" visibility="false" nodeId="1032" materialIds="100" castsShadows="true" receiveShadows="true" distanceBlending="false">
+                    <Shape shapeId="2" name="fibre (2)" nodeId="1033" materialIds="94" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                </Shape>
+                <TransformGroup name="transform" translation="0.15 -0.1 0" nodeId="1034">
+                    <Shape shapeId="3" name="fibre (3)" nodeId="1035" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                    <Shape shapeId="4" name="fibre (1)" nodeId="1036" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                </TransformGroup>
+                <TransformGroup name="transform" translation="0.31 -0.1 0" nodeId="1037">
+                    <Shape shapeId="5" name="fibre (3)" nodeId="1038" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                    <Shape shapeId="6" name="fibre (1)" nodeId="1039" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+                </TransformGroup>
+            </TransformGroup>
+            <Shape shapeId="7" name="f2" translation="0 3.35 -1.1" rotation="0 -94 90" scale="1.8 1.76 1.94" nodeId="1040" materialIds="86" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="transform" translation="0.7 1.86 -1.7" nodeId="1041"/>
+        </TransformGroup>
+    </Scene>
+</i3D>
